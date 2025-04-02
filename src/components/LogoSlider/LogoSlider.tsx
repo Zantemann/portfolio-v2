@@ -16,7 +16,7 @@ const LogoSlider = () => {
 
   return (
     <div className={Styles.container} style={{ overflow: 'hidden' }}>
-      <h1>Core Expertise</h1>
+      <h2>Core Expertise</h2>
       <div className={Styles.logos}>
         <div className={Styles['logos-slide']}>
           {images.map((image, index) => (

@@ -13,9 +13,7 @@
   max-width: 100%;
 }
 
-.container h1 {
-  font-size: 2rem;
-  font-weight: 600;
+.container h2 {
   margin-bottom: 40px;
 }
 
@@ -30,7 +28,7 @@
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 20%;
   height: 100%;
   content: '';
   z-index: 2;
@@ -58,11 +56,6 @@
 }
 
 @media (max-width: 900px) {
-  .logos:before,
-  .logos:after {
-    width: 100px;
-  }
-
   .logos-slide {
     height: 75px;
   }
