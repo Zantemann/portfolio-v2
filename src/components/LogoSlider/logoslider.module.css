@@ -9,10 +9,13 @@
 
 .container {
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .container h1 {
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
@@ -57,10 +60,20 @@
 @media (max-width: 900px) {
   .logos:before,
   .logos:after {
-    width: 150px;
+    width: 100px;
+  }
+
+  .logos-slide {
+    height: 75px;
+  }
+
+  .logos {
+    height: 75px;
   }
 
   .logos-slide img {
+    height: 75px;
+    width: 75px;
     margin: 0 20px;
   }
 }

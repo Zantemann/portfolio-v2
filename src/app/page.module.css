@@ -1,10 +1,11 @@
 .main {
-  max-width: 1280px;
-  min-height: 100vh;
-  padding-block: 100px;
-  justify-self: center;
+  width: 100%;
+  max-width: 1328px;
   display: flex;
   flex-direction: column;
+  padding-block: 80px;
+  padding-inline: 24px;
+  gap: 40px;
 }
 
 .content {
@@ -12,12 +13,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 60px;
+  gap: 48px;
 }
 
 .textSection {
-  max-width: 70%;
   align-self: flex-start;
+  width: 100%;
 }
 
 .textSection h1 {
@@ -55,11 +56,31 @@
 
 .imageSection {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 0;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
 .profileImage {
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-block: 48px;
+    padding-inline: 18px;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  .textSection h1 {
+    font-size: 3rem;
+  }
+  .textSection p {
+    font-size: 1rem;
+  }
 }

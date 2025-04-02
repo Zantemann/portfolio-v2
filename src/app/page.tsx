@@ -43,18 +43,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className={styles.imageSection}>
           <Image
             src="/profile_santeri.jpg"
             alt="Santeri Ora"
-            width={350}
-            height={350}
+            width={0}
+            height={0}
+            sizes="(max-width: 350px) 100vw"
+            priority
             className={styles.profileImage}
           />
         </div>
       </div>
-      <LogoSlider />
+      <div className={styles.content}>
+        <LogoSlider />
+      </div>
     </main>
   );
 }
