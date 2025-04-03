@@ -10,11 +10,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
   title: 'Santeri Ora - Portfolio',
-  description: "Check Santeri's experience and projects",
+  description:
+    "Check Santeri's experience and latest ventures in full-stack development and entrepreneurship.",
   openGraph: {
     title: 'Santeri Ora - Portfolio',
-    description: "Check Santeri's experience and projects",
+    description:
+      "Check Santeri's experience and latest ventures in full-stack development and entrepreneurship.",
     type: 'website',
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_URL,

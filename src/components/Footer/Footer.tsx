@@ -3,7 +3,7 @@ import Styles from './footer.module.css';
 const Footer = () => {
   return (
     <div className={Styles.container}>
-      <p>Contact</p>
+      <h3>Contact</h3>
       <div className={Styles.info}>
         <p>
           Email: <a href="mailto:orasanteri@gmail.com">orasanteri@gmail.com</a>

@@ -2,23 +2,26 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
 import Footer from '@/components/Footer/Footer';
+import Navbar from '@/components/Navbar/Navbar';
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Navbar />
       <div className={styles.content}>
         <div className={styles.textSection}>
           <h1>Welcome to My Portfolio</h1>
           <p>
             Hi, I&apos;m Santeri Ora, a passionate full-stack developer and a second-time founder. I
             specialize in developing various types of web applications, combining technical
-            expertise with a strong understanding of business. Currently, I am focused on building
-            my company Superwider while also completing my master&apos;s thesis in computer science
-            at Tampere University. Let&apos;s connect, and do not forget to check out Superwider!
+            expertise with a strong understanding of business. Currently, I&apos;m focused on
+            building my company Superwider while also completing my master&apos;s thesis in computer
+            science at Tampere University. Let&apos;s connect, and don&apos;t forget to check out
+            Superwider!
           </p>
           <div className={styles.buttons}>
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://linkedin.com/in/santeriora"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialButton}
@@ -26,12 +29,12 @@ export default function Home() {
               <Image src="/logos/linkedin.svg" alt="LinkedIn" width={48} height={48} />
             </a>
             <a
-              href="https://github.com/your-profile"
+              href="https://github.com/zantemann"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialButton}
             >
-              <Image src="/logos/github.svg" alt="LinkedIn" width={48} height={48} />
+              <Image src="/logos/github.svg" alt="GitHub" width={48} height={48} />
             </a>
             <a
               href="https://superwider.com"
