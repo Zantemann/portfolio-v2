@@ -1,15 +1,13 @@
 import Image from 'next/image';
-import styles from './page.module.css';
+import Link from 'next/link';
+import Styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
-import Footer from '@/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Navbar />
-      <div className={styles.content}>
-        <div className={styles.textSection}>
+    <main className={Styles.main}>
+      <div className={Styles.content}>
+        <div className={Styles.textSection}>
           <h1>Welcome to My Portfolio</h1>
           <p>
             Hi, I&apos;m Santeri Ora, a passionate full-stack developer and a second-time founder. I
@@ -19,35 +17,35 @@ export default function Home() {
             science at Tampere University. Let&apos;s connect, and don&apos;t forget to check out
             Superwider!
           </p>
-          <div className={styles.buttons}>
-            <a
+          <div className={Styles.buttons}>
+            <Link
               href="https://linkedin.com/in/santeriora"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.socialButton}
+              className={Styles.socialButton}
             >
               <Image src="/logos/linkedin.svg" alt="LinkedIn" width={48} height={48} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/zantemann"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.socialButton}
+              className={Styles.socialButton}
             >
               <Image src="/logos/github.svg" alt="GitHub" width={48} height={48} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://superwider.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.bigButton}
+              className={Styles.bigButton}
             >
               <Image src="/logos/superwider.svg" alt="Superwider" height={48} width={150} />
-            </a>
+            </Link>
           </div>
         </div>
 
-        <div className={styles.imageSection}>
+        <div className={Styles.imageSection}>
           <Image
             src="/profile_santeri.jpg"
             alt="Santeri Ora"
@@ -56,14 +54,13 @@ export default function Home() {
             sizes="350px"
             priority
             quality={100}
-            className={styles.profileImage}
+            className={Styles.profileImage}
           />
         </div>
       </div>
-      <div className={styles.content}>
+      <div className={Styles.content}>
         <LogoSlider />
       </div>
-      <Footer />
     </main>
   );
 }

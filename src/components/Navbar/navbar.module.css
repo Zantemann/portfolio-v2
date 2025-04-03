@@ -2,7 +2,17 @@
   line-height: 0;
 }
 
+.navbar a {
+  display: inline-block;
+}
+
 .logo {
   height: 40px;
   width: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding-bottom: 24px;
+  }
 }

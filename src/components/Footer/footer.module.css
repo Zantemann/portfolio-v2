@@ -1,5 +1,7 @@
 .container {
   padding-top: 40px;
+  margin-top: auto;
+  bottom: 0;
 }
 
 .info {

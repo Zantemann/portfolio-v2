@@ -1,12 +1,6 @@
 .main {
-  width: 100%;
-  max-width: 1328px;
   display: flex;
-  justify-self: center;
   flex-direction: column;
-  padding-top: 48px;
-  padding-bottom: 24px;
-  padding-inline: 24px;
   gap: 48px;
 }
 
@@ -41,12 +35,16 @@
 }
 
 .bigButton {
-  display: inline-block;
   height: 48px;
   padding-inline: 12px;
-  color: #ededed;
   background-color: #ededed;
+  color: #0a0a0a;
   border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 .imageSection {
@@ -65,11 +63,9 @@
 
 @media (max-width: 900px) {
   .main {
-    padding-top: 24px;
-    padding-bottom: 16px;
-    padding-inline: 16px;
     gap: 24px;
   }
+
   .content {
     flex-direction: column;
     gap: 24px;

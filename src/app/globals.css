@@ -28,6 +28,19 @@ body {
   background: var(--background);
 }
 
+.main {
+  width: 100%;
+  max-width: 1328px;
+  min-height: 100vh;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  padding-inline: 24px;
+  gap: 48px;
+}
+
 * h1 {
   font-size: 4rem;
   font-weight: 600;
@@ -63,5 +76,14 @@ body {
 
   * p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-inline: 16px;
+    gap: 24px;
   }
 }
