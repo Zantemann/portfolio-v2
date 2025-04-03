@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -49,8 +50,9 @@ export default function Home() {
             alt="Santeri Ora"
             width={0}
             height={0}
-            sizes="(max-width: 350px) 100vw"
+            sizes="350px"
             priority
+            quality={100}
             className={styles.profileImage}
           />
         </div>
@@ -58,6 +60,7 @@ export default function Home() {
       <div className={styles.content}>
         <LogoSlider />
       </div>
+      <Footer />
     </main>
   );
 }

@@ -4,7 +4,8 @@
   display: flex;
   justify-self: center;
   flex-direction: column;
-  padding-block: 80px;
+  padding-top: 80px;
+  padding-bottom: 24px;
   padding-inline: 24px;
   gap: 48px;
 }
@@ -64,7 +65,8 @@
 
 @media (max-width: 900px) {
   .main {
-    padding-block: 48px;
+    padding-top: 48px;
+    padding-bottom: 16px;
     padding-inline: 16px;
     gap: 24px;
   }

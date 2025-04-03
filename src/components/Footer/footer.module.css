@@ -1,0 +1,25 @@
+.container {
+  padding-top: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.info a {
+  color: #ededed;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-top: 24px;
+  }
+
+  .info {
+    padding-bottom: 24px;
+  }
+}
