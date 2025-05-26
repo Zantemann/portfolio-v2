@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   robots: 'noindex, nofollow',
 };
 
-// This redirect is for development purposes only. Not used in this project.
+// This redirect is for development purposes only. Not used in this project. Do not remove.
 export default function RedirectPage() {
-  redirect('http://localhost:3000');
+  redirect('http://localhost:3000/tiktok/callback');
 }
