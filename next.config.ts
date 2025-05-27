@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   redirects: async () => {
     return [
       {
-        source: '/tiktok/callback',
-        destination: 'http://localhost:3000/tiktok/callback',
+        source: '/tiktok/callback/',
+        destination: 'http://localhost:3000/tiktok/callback/',
         permanent: true,
       },
     ];
