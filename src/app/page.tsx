@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
+import Projects from '@/components/Projects/Projects';
 
 export default function Home() {
   return (
@@ -9,39 +9,23 @@ export default function Home() {
       <div className={Styles.content}>
         <div className={Styles.textSection}>
           <h1>Welcome to My Portfolio</h1>
-          <p>
-            Hi, I&apos;m Santeri Ora, a passionate full-stack developer and a second-time founder. I
-            specialize in developing various types of web applications, combining technical
-            expertise with a strong understanding of business. Currently, I&apos;m focused on
-            building my company Superwider while also completing my master&apos;s thesis in computer
-            science at Tampere University. Let&apos;s connect, and don&apos;t forget to check out
-            Superwider!
-          </p>
-          <div className={Styles.buttons}>
-            <Link
-              href="https://linkedin.com/in/santeriora"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.socialButton}
-            >
-              <Image src="/logos/linkedin.svg" alt="LinkedIn" width={48} height={48} />
-            </Link>
-            <Link
-              href="https://github.com/zantemann"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.socialButton}
-            >
-              <Image src="/logos/github.svg" alt="GitHub" width={48} height={48} />
-            </Link>
-            <Link
-              href="https://superwider.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.bigButton}
-            >
-              <Image src="/logos/superwider.svg" alt="Superwider" height={48} width={150} />
-            </Link>
+          <div className={Styles.description}>
+            <p>
+              Hi, I&apos;m Santeri Ora, a Lean-driven full-stack developer and a second-time
+              founder. I specialize in building scalable web applications, combining deep technical
+              expertise with a strong business understanding.
+            </p>
+            <p>
+              I graduated at the end of 2025 with a Master&apos;s degree in Computer Science from
+              Tampere University. Currently, I am focused on scaling my company, Superwider, where I
+              am building a data-driven platform that automates performance-based influencer
+              marketing through social media integrations.
+            </p>
+            <p>
+              I&apos;m passionate about solving complex technical challenges and turning business
+              needs into efficient software solutions. Let&apos;s connect, and don&apos;t forget to
+              check out Superwider!
+            </p>
           </div>
         </div>
 
@@ -61,6 +45,7 @@ export default function Home() {
       <div className={Styles.content}>
         <LogoSlider />
       </div>
+      <Projects />
     </main>
   );
 }

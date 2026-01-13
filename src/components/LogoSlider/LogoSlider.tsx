@@ -3,19 +3,19 @@ import Styles from './logoslider.module.css';
 import { Logo } from '@/types/data';
 
 const coreTech = [
-  { src: '/logos/nextjs.svg', alt: 'Next.js' },
-  { src: '/logos/nodejs.svg', alt: 'Node.js' },
-  { src: '/logos/react.svg', alt: 'React' },
-  { src: '/logos/typescript.svg', alt: 'TypeScript' },
-  { src: '/logos/mongo.svg', alt: 'MongoDB' },
-  { src: '/logos/docker.svg', alt: 'Docker' },
-  { src: '/logos/git.svg', alt: 'Git' },
-  { src: '/logos/figma.svg', alt: 'Figma' },
+  { src: '/logos/technologies/nextjs.svg', alt: 'Next.js' },
+  { src: '/logos/technologies/nodejs.svg', alt: 'Node.js' },
+  { src: '/logos/technologies/react.svg', alt: 'React' },
+  { src: '/logos/technologies/typescript.svg', alt: 'TypeScript' },
+  { src: '/logos/technologies/mongo.svg', alt: 'MongoDB' },
+  { src: '/logos/technologies/docker.svg', alt: 'Docker' },
+  { src: '/logos/technologies/git.svg', alt: 'Git' },
+  { src: '/logos/technologies/figma.svg', alt: 'Figma' },
 ] as Logo[];
 
 const LogoSlider = () => {
   return (
-    <div className={Styles.container} style={{ overflow: 'hidden' }}>
+    <div className={Styles.container}>
       <h2>Core Expertise</h2>
       <div className={Styles.logos}>
         <div className={Styles['logos-slide']}>

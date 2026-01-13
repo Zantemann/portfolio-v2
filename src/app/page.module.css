@@ -17,34 +17,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-.buttons {
+.textSection h1 {
+  margin-bottom: 24px;
+}
+
+.description {
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  align-items: center;
-}
-
-.socialButton {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  border-radius: 5px;
-}
-
-.bigButton {
-  height: 48px;
-  padding-inline: 12px;
-  background-color: #ededed;
-  color: #0a0a0a;
-  border-radius: 5px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .imageSection {
@@ -63,12 +45,20 @@
 
 @media (max-width: 900px) {
   .main {
-    gap: 24px;
+    gap: 32px;
   }
 
   .content {
     flex-direction: column;
     gap: 24px;
+  }
+
+  .textSection h1 {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    gap: 10px;
   }
 
   .imageSection {
