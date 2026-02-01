@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         destination: 'http://localhost:3000/tiktok/callback/',
         permanent: true,
       },
+      {
+        source: '/tiktok/callback',
+        destination: 'http://localhost:3000/tiktok/callback/',
+        permanent: true,
+      },
     ];
   },
 };
