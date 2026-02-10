@@ -1,0 +1,44 @@
+{
+  "NAVIGATION": {
+    "HOME": {
+      "PATH": "/"
+    }
+  },
+  "NAVBAR": {
+    "LOGO_ALT": "Logo"
+  },
+  "ERROR": {
+    "TITLE": "Jotain meni pieleen!",
+    "DESCRIPTION": "Odottamaton virhe tapahtui. Yritä uudelleen.",
+    "RETRY_BUTTON": "Yritä uudelleen"
+  },
+  "NOT_FOUND": {
+    "TITLE": "Sivua ei löytynyt",
+    "HOME_BUTTON": "Siirry etusivulle"
+  },
+  "HOME": {
+    "METADATA": {
+      "TITLE": "Santeri Ora",
+      "DESCRIPTION": "Tutustu Santerin kokemukseen ja viimeisimpiin hankkeisiin full-stack-kehityksessä ja yrittäjyydessä.",
+      "COMPANY_NAME": "Portfolio",
+      "LOCALE": "fi_FI"
+    },
+    "HEADING": "Tervetuloa portfoliooni",
+    "INTRO_P1": "Hei, olen Santeri Ora, Lean-ajatteluun perustuva full-stack-kehittäjä ja toisen kerran yrittäjä. Erikoisosaamistani on skaalautuvien web-sovellusten rakentaminen yhdistäen syvällistä teknistä asiantuntemusta vahvaan liiketoimintaymmärrykseen.",
+    "INTRO_P2": "Valmistuin vuoden 2025 lopussa tietotekniikan maisteriksi Tampereen yliopistosta. Tällä hetkellä keskityn yritykseni Superwider:n skaalaamiseen, jossa rakennan dataan perustuvaa alustaa, joka automatisoi suoritusperusteista vaikuttajamarkkinointia sosiaalisen median integraatioiden kautta.",
+    "INTRO_P3": "Olen intohimoinen monimutkaisten teknisten haasteiden ratkaisemisesta ja liiketoimintatarpeiden muuttamisesta tehokkaiksi ohjelmistoratkaisuiksi. Otetaan yhteyttä, äläkä unohda tutustua Superwider:iin!",
+    "PROFILE_ALT": "Santeri Ora"
+  },
+  "LOGO_SLIDER": {
+    "TITLE": "Ydinosaaminen"
+  },
+  "PROJECTS": {
+    "TITLE": "Projektit"
+  },
+  "FOOTER": {
+    "TITLE": "Yhteystiedot",
+    "EMAIL_LABEL": "Sähköposti:",
+    "PHONE_LABEL": "Puhelin:",
+    "COPYRIGHT": "© {year} Santeri Ora. Kaikki oikeudet pidätetään."
+  }
+}

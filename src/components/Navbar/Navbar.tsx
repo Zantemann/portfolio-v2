@@ -1,14 +1,18 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Styles from './navbar.module.css';
+import { getTranslations } from 'next-intl/server';
+import LocaleSwitcher from '../LocaleSwitcher/LocaleSwitcher';
 
-const Navbar = () => {
+const Navbar = async () => {
+  const t = await getTranslations('NAVBAR');
+
   return (
     <nav className={Styles.navbar}>
       <Link href="/">
         <Image
           src="/ora-logo-white.png"
-          alt="Logo"
+          alt={t('LOGO_ALT')}
           width={0}
           height={0}
           sizes="500px"
@@ -17,6 +21,7 @@ const Navbar = () => {
           className={Styles.logo}
         />
       </Link>
+      <LocaleSwitcher />
     </nav>
   );
 };

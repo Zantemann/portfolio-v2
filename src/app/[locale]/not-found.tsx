@@ -1,10 +1,15 @@
+'use client';
+
 import styles from './page.module.css';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 const NotFound = () => {
+  const t = useTranslations('NOT_FOUND');
+
   return (
     <main className={styles.main}>
-      <h1>Page Not Found</h1>
+      <h1>{t('TITLE')}</h1>
       <Link
         href="/"
         className={styles.bigButton}
@@ -12,7 +17,7 @@ const NotFound = () => {
           width: '200px',
         }}
       >
-        <p>Go to Homepage</p>
+        <p>{t('HOME_BUTTON')}</p>
       </Link>
     </main>
   );

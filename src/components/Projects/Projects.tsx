@@ -1,34 +1,37 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Styles from './projects.module.css';
+import { getTranslations } from 'next-intl/server';
 
-const projects = [
-  {
-    href: 'https://superwider.com',
-    logo: '/logos/projects/superwider.svg',
-    alt: 'Superwider',
-  },
-  {
-    href: 'https://pumppilab.com',
-    logo: '/logos/projects/pumppilab.svg',
-    alt: 'Pumppi Lab',
-  },
-  {
-    href: 'https://www.xn--vlitn-grad.fi',
-    logo: '/logos/projects/valitan.svg',
-    alt: 'Vlitn Grad',
-  },
-  {
-    href: 'https://steiermarks.fi',
-    logo: '/logos/projects/steiermarks.svg',
-    alt: 'Steiermarks',
-  },
-];
+const Projects = async () => {
+  const t = await getTranslations('PROJECTS');
 
-const Projects = () => {
+  const projects = [
+    {
+      href: 'https://superwider.com',
+      logo: '/logos/projects/superwider.svg',
+      alt: 'Superwider',
+    },
+    {
+      href: 'https://pumppilab.com',
+      logo: '/logos/projects/pumppilab.svg',
+      alt: 'Pumppilab',
+    },
+    {
+      href: 'https://www.xn--vlitn-grad.fi',
+      logo: '/logos/projects/valitan.svg',
+      alt: 'Välitän LKV',
+    },
+    {
+      href: 'https://steiermarks.fi',
+      logo: '/logos/projects/steiermarks.svg',
+      alt: 'Steiermarks',
+    },
+  ];
+
   return (
     <div className={Styles.projectsContainer}>
-      <h2>Projects</h2>
+      <h2>{t('TITLE')}</h2>
       <div className={Styles.projectsGrid}>
         {projects.map((project) => (
           <Link

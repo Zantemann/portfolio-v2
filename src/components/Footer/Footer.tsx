@@ -1,17 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Styles from './footer.module.css';
+import { getTranslations } from 'next-intl/server';
 
-const Footer = () => {
+const Footer = async () => {
+  const t = await getTranslations('FOOTER');
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className={Styles.container}>
-      <h2>Contact</h2>
+      <h2>{t('TITLE')}</h2>
       <div className={Styles.info}>
         <p>
-          Email: <a href="mailto:orasanteri@gmail.com">orasanteri@gmail.com</a>
+          {t('EMAIL_LABEL')} <a href="mailto:orasanteri@gmail.com">orasanteri@gmail.com</a>
         </p>
         <p>
-          Phone: <a href="tel:+358456971369">+358 45 6971369</a>
+          {t('PHONE_LABEL')} <a href="tel:+358456971369">+358 45 6971369</a>
         </p>
         <div className={Styles.socialLinks}>
           <Link
@@ -32,9 +36,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <p className={Styles.copyright}>
-        © {new Date().getFullYear()} Santeri Ora. All rights reserved.
-      </p>
+      <p className={Styles.copyright}>{t('COPYRIGHT', { year: currentYear.toString() })}</p>
     </div>
   );
 };

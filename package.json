@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit && next lint",
-    "format": "prettier --write ."
+    "lint": "eslint --no-cache",
+    "format": "prettier --write .",
+    "sonar": "sonar-scanner"
   },
   "dependencies": {
     "next": "^16.1.6",
+    "next-intl": "^4.8.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
