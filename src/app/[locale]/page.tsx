@@ -3,13 +3,12 @@ import Styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
 import Projects from '@/components/Projects/Projects';
 import { getTranslations } from 'next-intl/server';
-import type { Metadata } from 'next';
+import { SCHEMA_CONTEXT, JsonLdArray } from '@/utils/schema';
+import type { Organization, WebPage, WebSite } from 'schema-dts';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   const t = await getTranslations('HOME.METADATA');
   const n = await getTranslations('NAVIGATION');
-
-  const videoUrl = 'https://65m1p7kup9.ufs.sh/f/zUUIsnh1aQ3c5S3DHVJfioOFx4wTUbMRnXP01YNjEh8paHv7';
 
   return {
     title: `${t('TITLE')} | ${t('COMPANY_NAME')}`,
@@ -26,14 +25,6 @@ export async function generateMetadata(): Promise<Metadata> {
           url: './opengraph-image.png',
         },
       ],
-      videos: [
-        {
-          url: videoUrl,
-          type: 'video/mp4',
-          width: 1920,
-          height: 1080,
-        },
-      ],
     },
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_URL}${n('HOME.PATH')}`,
@@ -45,11 +36,56 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const t = await getTranslations('HOME');
+  const n = await getTranslations('NAVIGATION');
+  const { locale } = await params;
+  const baseUrl = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000';
+  const companyName = t('METADATA.COMPANY_NAME');
+
+  const pageUrl = `${baseUrl}${n('HOME.PATH')}`;
+  const organizationSchema: Organization = {
+    '@type': 'Organization',
+    '@id': `${baseUrl}/#organization`,
+    name: companyName,
+    url: baseUrl,
+    logo: `${baseUrl}/ora-logo-white.png`,
+  };
+  const webSiteSchema: WebSite = {
+    '@type': 'WebSite',
+    '@id': `${baseUrl}/#website`,
+    name: companyName,
+    url: baseUrl,
+    description: t('METADATA.DESCRIPTION'),
+    inLanguage: locale,
+    publisher: { '@id': `${baseUrl}/#organization` },
+  };
+  const webPageSchema: WebPage = {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    name: t('METADATA.TITLE'),
+    description: t('METADATA.DESCRIPTION'),
+    url: pageUrl,
+    inLanguage: locale,
+    isPartOf: { '@id': `${baseUrl}/#website` },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/opengraph-image.png`,
+    },
+  };
 
   return (
     <main className={Styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JsonLdArray([
+            { ...organizationSchema, '@context': SCHEMA_CONTEXT },
+            { ...webSiteSchema, '@context': SCHEMA_CONTEXT },
+            { ...webPageSchema, '@context': SCHEMA_CONTEXT },
+          ]),
+        }}
+      />
       <div className={Styles.content}>
         <div className={Styles.textSection}>
           <h1>{t('HEADING')}</h1>

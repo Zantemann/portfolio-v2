@@ -1,9 +1,58 @@
 import Styles from './page.module.css';
 import { getTranslations } from 'next-intl/server';
+import type { WebPage } from 'schema-dts';
+import { SCHEMA_CONTEXT, JsonLdArray } from '@/utils/schema';
 
-const ServicesPage = async () => {
+export async function generateMetadata() {
+  const t = await getTranslations('SERVICES.METADATA');
+  const n = await getTranslations('NAVIGATION');
+
+  return {
+    title: t('TITLE'),
+    description: t('DESCRIPTION'),
+    openGraph: {
+      title: t('TITLE'),
+      description: t('DESCRIPTION'),
+      url: n('SERVICES.PATH'),
+      type: 'website',
+      locale: t('LOCALE'),
+      siteName: t('COMPANY_NAME'),
+      images: [
+        {
+          url: './opengraph-image.png',
+        },
+      ],
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_URL}${n('SERVICES.PATH')}`,
+      languages: {
+        en: `${process.env.NEXT_PUBLIC_URL}/software-services`,
+        fi: `${process.env.NEXT_PUBLIC_URL}/fi/ohjelmistopalvelut`,
+      },
+    },
+  };
+}
+
+const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const t = await getTranslations('SERVICES');
+  const n = await getTranslations('NAVIGATION');
+  const { locale } = await params;
+  const baseUrl = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000';
+  const pageUrl = `${baseUrl}${n('SERVICES.PATH')}`;
 
+  const webPageSchema: WebPage = {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    name: t('METADATA.TITLE'),
+    url: pageUrl,
+    description: t('METADATA.DESCRIPTION'),
+    inLanguage: locale,
+    isPartOf: { '@id': `${baseUrl}/#website` },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/opengraph-image.png`,
+    },
+  };
   const exampleLinks = {
     SUPERWIDER: 'https://superwider.com',
     PUMPPILAB: 'https://pumppilab.com',
@@ -13,6 +62,12 @@ const ServicesPage = async () => {
 
   return (
     <main className={Styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JsonLdArray([{ ...webPageSchema, '@context': SCHEMA_CONTEXT }]),
+        }}
+      />
       <div className={Styles.header}>
         <h1>{t('TITLE')}</h1>
         <p>{t('INTRO')}</p>

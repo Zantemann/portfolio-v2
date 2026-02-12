@@ -22,7 +22,7 @@ const Navbar = async () => {
             className={Styles.logo}
           />
         </Link>
-        <Link href="/services" className={`${Styles.navLink} ${Styles.navLinkAccent}`}>
+        <Link href="/software-services" className={`${Styles.navLink} ${Styles.navLinkAccent}`}>
           {t('SERVICES_LABEL')}
         </Link>
       </div>

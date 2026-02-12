@@ -1,23 +1,34 @@
 import { MetadataRoute } from 'next';
-import { LocaleEnum, locales, sitemapPathnames } from '@/i18n/routing';
+import { defaultLocale, locales, sitemapPathnames, type Locale } from '@/i18n/routing';
 
-const baseUrl = process.env.NEXT_PUBLIC_URL;
+const baseUrl = (process.env.NEXT_PUBLIC_URL || 'http://localhost:3000').replace(/\/$/, '');
+
+const buildUrl = (locale: Locale, pathValue: string) => {
+  const localePrefix = locale === defaultLocale ? '' : `/${locale}`;
+  return `${baseUrl}${localePrefix}${pathValue === '/' && localePrefix ? '' : pathValue}`;
+};
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const entries: MetadataRoute.Sitemap = [];
+  const now = new Date();
 
-  locales.forEach((locale) => {
-    Object.entries(sitemapPathnames).forEach(([_, paths]) => {
-      const pathValue = typeof paths === 'string' ? paths : paths[locale];
-      const localePrefix = locale === LocaleEnum.EN ? '' : `/${locale}`;
-      const url = `${baseUrl}${localePrefix}${pathValue === '/' && localePrefix ? '' : pathValue}`;
-
-      entries.push({
-        url,
-        lastModified: new Date().toISOString(),
-      });
-    });
-  });
-
-  return entries;
+  return (Object.values(sitemapPathnames) as Array<string | Record<Locale, string>>).map(
+    (paths) => {
+      const pathValue = typeof paths === 'string' ? paths : paths[defaultLocale];
+      const alternates = {
+        languages: Object.fromEntries(
+          locales.map((locale) => {
+            const localizedPath = typeof paths === 'string' ? paths : paths[locale];
+            return [locale, buildUrl(locale, localizedPath)];
+          }),
+        ),
+      };
+      return {
+        url: buildUrl(defaultLocale, pathValue),
+        alternates,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: pathValue === '/' ? 1 : 0.8,
+      } satisfies MetadataRoute.Sitemap[number];
+    },
+  );
 }

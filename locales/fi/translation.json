@@ -4,7 +4,7 @@
       "PATH": "/"
     },
     "SERVICES": {
-      "PATH": "/palvelut"
+      "PATH": "/ohjelmistopalvelut"
     }
   },
   "NAVBAR": {
@@ -40,6 +40,12 @@
     "TITLE": "Projektit"
   },
   "SERVICES": {
+    "METADATA": {
+      "TITLE": "Ohjelmistopalvelut",
+      "DESCRIPTION": "Tuloshakuista ja kokonaisvaltaista kehitystä moderneille verkkotuotteille. Palveluni on suunniteltu täyttämään tyhjiö rajoittuneiden \"no-code\" -ratkaisujen ja kalliiden, usein kankeiden ohjelmistotoimistojen välillä. Toimitan ensimmäisen julkaisuvalmiin version 1–2 viikossa. Tätä seuraa palautteeseesi perustuva muokkauskierros ja lopulta hienosäätö, joka varmistaa virheettömän lopputuloksen virallista julkaisua varten.",
+      "COMPANY_NAME": "Portfolio",
+      "LOCALE": "fi_FI"
+    },
     "TITLE": "Ohjelmistopalvelut",
     "INTRO": "Tuloshakuista ja kokonaisvaltaista kehitystä moderneille verkkotuotteille. Palveluni on suunniteltu täyttämään tyhjiö rajoittuneiden \"no-code\" -ratkaisujen ja kalliiden, usein kankeiden ohjelmistotoimistojen välillä. Toimitan ensimmäisen julkaisuvalmiin version 1–2 viikossa. Tätä seuraa palautteeseesi perustuva muokkauskierros ja lopulta hienosäätö, joka varmistaa virheettömän lopputuloksen virallista julkaisua varten. Katso alta, miten nopea ja asiantunteva otteeni auttaa yritystäsi kasvamaan.",
     "COMMON": {

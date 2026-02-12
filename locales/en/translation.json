@@ -4,7 +4,7 @@
       "PATH": "/"
     },
     "SERVICES": {
-      "PATH": "/services"
+      "PATH": "/software-services"
     }
   },
   "NAVBAR": {
@@ -40,6 +40,12 @@
     "TITLE": "Projects"
   },
   "SERVICES": {
+    "METADATA": {
+      "TITLE": "Software Services",
+      "DESCRIPTION": "Results-driven and comprehensive development for modern web products. My service is designed to bridge the gap between limited \"no-code\" setups and expensive, often rigid software agencies. I provide a functional, launch-ready version within 1 to 2 weeks. This is followed by a round of edits based on your feedback and a final polish to ensure a flawless result for the official launch.",
+      "COMPANY_NAME": "Portfolio",
+      "LOCALE": "en_US"
+    },
     "TITLE": "Software Services",
     "INTRO": "Results-driven and comprehensive development for modern web products. My service is designed to bridge the gap between limited \"no-code\" setups and expensive, often rigid software agencies. I provide a functional, launch-ready version within 1 to 2 weeks. This is followed by a round of edits based on your feedback and a final polish to ensure a flawless result for the official launch. See below how this fast and expert approach helps your business grow.",
     "COMMON": {
