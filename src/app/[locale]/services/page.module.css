@@ -1,0 +1,256 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionTitle {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.sectionNumber {
+  font-size: 1em;
+  font-weight: 700;
+  color: rgba(124, 255, 225, 0.9);
+}
+
+.sectionSubtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefitsList h4 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.serviceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.serviceHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.serviceNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(124, 255, 225, 0.9);
+}
+
+.serviceHeader h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.serviceLead {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.serviceDescription {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subsection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.subsection h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.list {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  line-height: 1.6;
+}
+
+.list li strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.example {
+  margin: 8px 0 0;
+  padding: 12px;
+  background: rgba(124, 255, 225, 0.05);
+  border-left: 3px solid rgba(124, 255, 225, 0.4);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.example strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.exampleLink {
+  color: rgba(124, 255, 225, 0.95);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.exampleLink:hover {
+  text-decoration: underline;
+}
+
+.benefitsIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid rgba(124, 255, 225, 0.2);
+  border-radius: 5px;
+  background: rgba(124, 255, 225, 0.03);
+}
+
+.benefitsIntro h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(124, 255, 225, 0.95);
+}
+
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.benefitItem strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+}
+
+.benefitItem p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.reasonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.reasonCard h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(124, 255, 225, 0.95);
+}
+
+.reasonCard p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    gap: 32px;
+  }
+
+  .section {
+    gap: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .serviceBlock {
+    padding: 20px;
+  }
+
+  .reasonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceBlock {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .serviceHeader {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .list {
+    padding-left: 16px;
+  }
+
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .reasonCard {
+    padding: 20px 16px;
+  }
+}

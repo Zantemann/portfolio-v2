@@ -9,19 +9,26 @@ const Navbar = async () => {
 
   return (
     <nav className={Styles.navbar}>
-      <Link href="/">
-        <Image
-          src="/ora-logo-white.png"
-          alt={t('LOGO_ALT')}
-          width={0}
-          height={0}
-          sizes="500px"
-          priority
-          quality={100}
-          className={Styles.logo}
-        />
-      </Link>
-      <LocaleSwitcher />
+      <div className={Styles.navLeft}>
+        <Link href="/">
+          <Image
+            src="/ora-logo-white.png"
+            alt={t('LOGO_ALT')}
+            width={0}
+            height={0}
+            sizes="500px"
+            priority
+            quality={100}
+            className={Styles.logo}
+          />
+        </Link>
+        <Link href="/services" className={`${Styles.navLink} ${Styles.navLinkAccent}`}>
+          {t('SERVICES_LABEL')}
+        </Link>
+      </div>
+      <div className={Styles.navActions}>
+        <LocaleSwitcher />
+      </div>
     </nav>
   );
 };

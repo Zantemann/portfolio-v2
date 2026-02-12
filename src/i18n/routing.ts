@@ -11,11 +11,16 @@ export type Locale = (typeof locales)[number];
 
 export const pathnames = {
   '/': '/',
+  '/services': {
+    en: '/services',
+    fi: '/palvelut',
+  },
 };
 
 // Static pathnames for sitemap (excludes dynamic routes)
 export const sitemapPathnames = {
   '/': pathnames['/'],
+  '/services': pathnames['/services'],
 };
 
 export const routing = defineRouting({

@@ -2,10 +2,14 @@
   "NAVIGATION": {
     "HOME": {
       "PATH": "/"
+    },
+    "SERVICES": {
+      "PATH": "/palvelut"
     }
   },
   "NAVBAR": {
-    "LOGO_ALT": "Logo"
+    "LOGO_ALT": "Logo",
+    "SERVICES_LABEL": "Palvelut"
   },
   "ERROR": {
     "TITLE": "Jotain meni pieleen!",
@@ -24,9 +28,9 @@
       "LOCALE": "fi_FI"
     },
     "HEADING": "Tervetuloa portfoliooni",
-    "INTRO_P1": "Hei, olen Santeri Ora, Lean-ajatteluun perustuva full-stack-kehittäjä ja toisen kerran yrittäjä. Erikoisosaamistani on skaalautuvien web-sovellusten rakentaminen yhdistäen syvällistä teknistä asiantuntemusta vahvaan liiketoimintaymmärrykseen.",
-    "INTRO_P2": "Valmistuin vuoden 2025 lopussa tietotekniikan maisteriksi Tampereen yliopistosta. Tällä hetkellä keskityn yritykseni Superwider:n skaalaamiseen, jossa rakennan dataan perustuvaa alustaa, joka automatisoi suoritusperusteista vaikuttajamarkkinointia sosiaalisen median integraatioiden kautta.",
-    "INTRO_P3": "Olen intohimoinen monimutkaisten teknisten haasteiden ratkaisemisesta ja liiketoimintatarpeiden muuttamisesta tehokkaiksi ohjelmistoratkaisuiksi. Otetaan yhteyttä, äläkä unohda tutustua Superwider:iin!",
+    "INTRO_P1": "Moi, olen Santeri Ora, Lean-ajatteluun nojaava full-stack-kehittäjä ja yrittäjä. Erikoisalaani on skaalautuvien verkkosovellusten rakentaminen. Yhdistän työssäni syvän teknisen osaamisen vahvaan liiketoimintaymmärrykseen.",
+    "INTRO_P2": "Valmistuin vuoden 2025 lopussa tietotekniikan maisteriksi Tampereen yliopistosta. Tällä hetkellä keskityn kasvattamaan yritystäni Superwideria, jossa rakennan datapohjaista alustaa tulospohjaisen vaikuttajamarkkinoinnin automatisointiin sosiaalisen median integraatioiden avulla.",
+    "INTRO_P3": "Innostun monimutkaisten teknisten haasteiden ratkomisesta ja tehokkaiden ohjelmistoratkaisujen kehittämisestä liiketoimintatarpeisiin. Verkostoidutaan ja muista käydä tsekkaamassa Superwider!",
     "PROFILE_ALT": "Santeri Ora"
   },
   "LOGO_SLIDER": {
@@ -35,10 +39,152 @@
   "PROJECTS": {
     "TITLE": "Projektit"
   },
+  "SERVICES": {
+    "TITLE": "Ohjelmistopalvelut",
+    "INTRO": "Tuloshakuista ja kokonaisvaltaista kehitystä moderneille verkkotuotteille. Palveluni on suunniteltu täyttämään tyhjiö rajoittuneiden \"no-code\" -ratkaisujen ja kalliiden, usein kankeiden ohjelmistotoimistojen välillä. Toimitan ensimmäisen julkaisuvalmiin version 1–2 viikossa. Tätä seuraa palautteeseesi perustuva muokkauskierros ja lopulta hienosäätö, joka varmistaa virheettömän lopputuloksen virallista julkaisua varten. Katso alta, miten nopea ja asiantunteva otteeni auttaa yritystäsi kasvamaan.",
+    "COMMON": {
+      "EXAMPLE": "Esimerkki:"
+    },
+    "SECTION_1": {
+      "TITLE": "Suunnittelu ja ohjelmistokehitys",
+      "SUBTITLE": "Rakennan yksilöllisiä verkkosivustoja yrityksille, jotka vaativat suorituskykyisiä ja ammattimaisia digitaalisia ratkaisuja. Kyseessä eivät ole geneeriset valmispohjat, vaan jokainen sivusto rakennetaan tukemaan brändiäsi ja myyntitavoitteitasi.",
+      "KEY_BENEFITS": {
+        "TITLE": "Keskeiset edut:",
+        "BENEFIT_1": {
+          "TITLE": "Huippuluokan nopeus:",
+          "DESCRIPTION": "Optimoin suorituskyvyn niin, ettei asiakkaidesi tarvitse koskaan odottaa sivujen latautumista."
+        },
+        "BENEFIT_2": {
+          "TITLE": "Saumaton mobiilikokemus:",
+          "DESCRIPTION": "Sivusto toimii ja näyttää hyvältä kaiken kokoisilla laitteilla pienistä puhelimista suuriin näyttöihin."
+        },
+        "BENEFIT_3": {
+          "TITLE": "Skaalautuva rakenne:",
+          "DESCRIPTION": "Koodi on tehty kasvamaan yrityksesi mukana. Uusien ominaisuuksien lisääminen on vaivatonta ilman teknisiä rajoitteita, joita tyypilliset \"raahaa ja pudota\" -työkalut aiheuttavat."
+        },
+        "BENEFIT_4": {
+          "TITLE": "Hakukoneoptimoitu koodi:",
+          "DESCRIPTION": "Ammattimainen koodaustapa varmistaa, että Google lukee sivustoasi oikein, mikä parantaa sijoituksiasi hakutuloksissa."
+        }
+      },
+      "SERVICE_1": {
+        "TITLE": "Räätälöidyt verkkosivut ja sovellukset",
+        "LEAD": "Toteutan ratkaisut perusteista alkaen varmistaakseni, että sivustosi on optimoitu tavoittamaan uusia kävijöitä ja muuttamaan heidät maksaviksi asiakkaiksi.",
+        "DESCRIPTION": "",
+        "EXAMPLE": "Superwider. Monimutkainen verkkosovellus, joka on suunniteltu suuren tietomäärän hallintaan ja vaativiin integraatioihin."
+      },
+      "SERVICE_2": {
+        "TITLE": "Verkkosivujen modernisointi",
+        "LEAD": "Päivitä nykyinen sivustosi tehokkaaksi työkaluksi puolessa ajassa.",
+        "DESCRIPTION": "Jos nykyinen sivustosi on hidas tai vanhentunut, sen uudelleenrakentaminen on usein kannattavampaa kuin vanhan koodin paikkaaminen. Käytän nykyistä sivustoasi pohjana, jolloin pystyn toimittamaan laadukkaamman ja päivitetyn version toivomillasi muutoksilla huomattavasti nopeammin kuin tyhjästä aloittaessa.",
+        "EXAMPLE": "Välitän LKV. Vanhentunut sivusto muutettiin moderniksi digitaaliseksi työkaluksi asiakashankintaan."
+      }
+    },
+    "SECTION_2": {
+      "TITLE": "Verkkokauppa ja SEO",
+      "SUBTITLE": "",
+      "SERVICE_1": {
+        "TITLE": "Verkkokaupparatkaisut (Shopify)",
+        "LEAD": "Julkaise ammattimainen verkkokauppa murto-osalla räätälöidyn koodauksen kustannuksista.",
+        "DESCRIPTION": "Käytän Shopify-alustaa, joka tarjoaa turvallisen ja helposti hallittavan pohjan kaupallesi. Huolehdin verkkokaupan luonnista, maksutapojen asentamisesta ja toimitustapojen lisäämisestä. Voit keskittyä myyntiin ilman huolta teknisistä yksityiskohdista.",
+        "BENEFITS": {
+          "TITLE": "Keskeiset hyödyt:",
+          "BENEFIT_1": {
+            "TITLE": "Kustannustehokkuus:",
+            "DESCRIPTION": "Saat laadukkaan verkkokaupan ilman räätälöityjen ohjelmistojen suuria investointeja."
+          },
+          "BENEFIT_2": {
+            "TITLE": "Automaattinen tietoturva:",
+            "DESCRIPTION": "Alusta huolehtii tietoturvasta ja päivityksistä automaattisesti, jolloin voit keskittyä liiketoimintaasi."
+          },
+          "BENEFIT_3": {
+            "TITLE": "Rakennettu kasvuun:",
+            "DESCRIPTION": "Järjestelmä tukee yritystäsi ensimmäisestä tilauksesta aina kymmeniin tuhansiin tilauksiin kuukaudessa."
+          }
+        },
+        "EXAMPLE": "Pumppi Lab. Yksinkertainen mutta moderni verkkokauppa, joka muuttaa sosiaalisen median liikenteen suoraksi liikevaihdoksi."
+      },
+      "SERVICE_2": {
+        "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
+        "LEAD": "PRO SEO -palveluni on kasvupaketti, joka auttaa sinua ohittamaan kilpailijasi ja muuttamaan Google-haut todelliseksi tuotoksi.",
+        "DESCRIPTION": "",
+        "PACKAGE": {
+          "TITLE": "Tarjottavia palveluita:",
+          "ITEM_1": {
+            "TITLE": "Tekninen kuntotarkastus:",
+            "DESCRIPTION": "Korjaan näkymättömät virheet, jotka estävät sivustoasi näkymästä hakutuloksissa."
+          },
+          "ITEM_2": {
+            "TITLE": "Kilpailija-analyysi:",
+            "DESCRIPTION": "Selvitän tarkalleen mitä kilpailijasi tekevät ja löydän avainsanat, joita asiakkaasi todella käyttävät."
+          },
+          "ITEM_3": {
+            "TITLE": "Digitaalinen maine:",
+            "DESCRIPTION": "Vahvistan sivustosi auktoriteettia hankkimalla linkityksiä muilta arvostetuilta sivustoilta."
+          },
+          "ITEM_4": {
+            "TITLE": "Laadukas sisältö:",
+            "DESCRIPTION": "Huolehdin blogitekstien ja artikkelien tuotannosta, mikä rakentaa luottamusta sekä hakukoneiden että asiakkaiden silmissä."
+          },
+          "ITEM_5": {
+            "TITLE": "Automaattinen näkyvyys:",
+            "DESCRIPTION": "Rakennan järjestelmiä, jotka luovat satoja kohdennettuja sivuja tavoittamaan juuri sinun toimialasi tärkeimmät hakutermit."
+          }
+        },
+        "EXAMPLE": "Superwider. Alusta, jonka näkyvyys maksimoitiin ammattimaisella linkitysstrategialla ja kohdennetulla sisällöllä."
+      }
+    },
+    "WHY_ME": {
+      "TITLE": "Miksi valita minut",
+      "SUBTITLE": "Keskityn ammattimaisiin tuloksiin ilman turhaa byrokratiaa, viivästyksiä tai teknisiä rajoitteita.",
+      "REASON_1": {
+        "TITLE": "Nopea toimitus (2–4 viikkoa)",
+        "DESCRIPTION": "Siinä missä perinteisillä ohjelmistotoimistoilla kuluu kuukausia projektin julkaisuun, minä toimitan ensimmäisen version 1–2 viikossa. Tämä luonnos on täysin toimiva ja julkaisuvalmis. Jatkuva kehitysmallini varmistaa, että näet edistymisen reaaliajassa ja voimme tehdä muutoksia todellisen käytön perusteella."
+      },
+      "REASON_2": {
+        "TITLE": "Tekninen laatu vs. perustyökalut",
+        "DESCRIPTION": "Monet toimijat luottavat pelkästään visuaalisiin no-code-työkaluihin. Vaikka ne ovat nopeita, lopputuloksena on usein hidas ja rajoittunut sivusto. Käytän samoja koodausstandardeja kuin maailman johtavat teknologiayhtiöt. Tämä takaa nopeamman, turvallisemman ja suorituskykyisemmän lopputuloksen."
+      },
+      "REASON_3": {
+        "TITLE": "Alhaiset ylläpitokustannukset",
+        "DESCRIPTION": "Huonosti toteutetut sivustot aiheuttavat kalliita teknisiä ongelmia. Rakentamalla kerralla oikein varmistan, että sivustosi on luotettava ja helppo ylläpitää. Vältät kalliit kuukausimaksut ja monimutkaiset integraatiokulut. Ylläpitoni on edullista: noin 20€ kuukaudessa sisältäen ammattimaisen hostauksen ja tietoturvapäivitykset."
+      },
+      "REASON_4": {
+        "TITLE": "Riskitön yhden vuoden takuu",
+        "DESCRIPTION": "Seison työni laadun takana. Jos sivustolla ilmenee virheitä tai ongelmia ensimmäisen vuoden aikana, korjaan ne veloituksetta. Voit luottaa siihen, että investointisi on turvattu."
+      }
+    },
+    "EXAMPLES": {
+      "ITEMS": {
+        "SUPERWIDER": {
+          "TITLE": "Superwider",
+          "DESCRIPTION": "Tulospohjaisen vaikuttajamarkkinoinnin alusta."
+        },
+        "PUMPPILAB": {
+          "TITLE": "Pumppi Lab",
+          "DESCRIPTION": "Verkkokaupan ja tuotekokemuksen kehitystä."
+        },
+        "VALITAN": {
+          "TITLE": "Välitän LKV",
+          "DESCRIPTION": "Palvelusivusto selkeyden ja konversion ehdoilla."
+        },
+        "STEIERMARKS": {
+          "TITLE": "Steiermarks",
+          "DESCRIPTION": "Brändi- ja verkkonäkyvyyden modernisointi."
+        }
+      }
+    }
+  },
   "FOOTER": {
     "TITLE": "Yhteystiedot",
     "EMAIL_LABEL": "Sähköposti:",
     "PHONE_LABEL": "Puhelin:",
     "COPYRIGHT": "© {year} Santeri Ora. Kaikki oikeudet pidätetään."
+  },
+  "LOCALE_SWITCHER": {
+    "LABEL": "Kieli",
+    "SELECT_ARIA": "Valitse kieli",
+    "ARIA_EN": "Vaihda englantiin",
+    "ARIA_FI": "Vaihda suomeksi"
   }
 }

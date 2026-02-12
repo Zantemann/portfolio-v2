@@ -2,10 +2,14 @@
   "NAVIGATION": {
     "HOME": {
       "PATH": "/"
+    },
+    "SERVICES": {
+      "PATH": "/services"
     }
   },
   "NAVBAR": {
-    "LOGO_ALT": "Logo"
+    "LOGO_ALT": "Logo",
+    "SERVICES_LABEL": "Services"
   },
   "ERROR": {
     "TITLE": "Something went wrong!",
@@ -35,10 +39,152 @@
   "PROJECTS": {
     "TITLE": "Projects"
   },
+  "SERVICES": {
+    "TITLE": "Software Services",
+    "INTRO": "Results-driven and comprehensive development for modern web products. My service is designed to bridge the gap between limited \"no-code\" setups and expensive, often rigid software agencies. I provide a functional, launch-ready version within 1 to 2 weeks. This is followed by a round of edits based on your feedback and a final polish to ensure a flawless result for the official launch. See below how this fast and expert approach helps your business grow.",
+    "COMMON": {
+      "EXAMPLE": "Example:"
+    },
+    "SECTION_1": {
+      "TITLE": "Engineering & Software Development",
+      "SUBTITLE": "I build unique websites for businesses that demand high-performance, professional digital solutions. These are not generic templates: every site is built to support your brand and sales goals.",
+      "KEY_BENEFITS": {
+        "TITLE": "Key Benefits:",
+        "BENEFIT_1": {
+          "TITLE": "Peak Performance:",
+          "DESCRIPTION": "I optimize performance so your customers never have to wait for pages to load."
+        },
+        "BENEFIT_2": {
+          "TITLE": "Seamless Mobile Experience:",
+          "DESCRIPTION": "Your site will work and look great on every screen size from the smallest smartphones to the largest desktops."
+        },
+        "BENEFIT_3": {
+          "TITLE": "Scalable Architecture:",
+          "DESCRIPTION": "The code is built to grow with your business. Adding new features is effortless and free of the technical roadblocks typical of \"drag and drop\" builders."
+        },
+        "BENEFIT_4": {
+          "TITLE": "Search-Optimized Code:",
+          "DESCRIPTION": "Professional coding standards ensure Google reads your site correctly, which improves your rankings in search results."
+        }
+      },
+      "SERVICE_1": {
+        "TITLE": "Custom Websites & Apps",
+        "LEAD": "I build solutions from the ground up to ensure your site is optimized to reach more visitors and turn them into paying customers.",
+        "DESCRIPTION": "",
+        "EXAMPLE": "Superwider. A complex web application designed for managing large amounts of data and demanding integrations."
+      },
+      "SERVICE_2": {
+        "TITLE": "Website Modernization",
+        "LEAD": "Upgrade your existing site into a powerful tool in half the time.",
+        "DESCRIPTION": "If your current site is slow or outdated, rebuilding it is often more profitable than patching old code. I use your current site as a map, allowing me to deliver a superior, updated version with your desired changes much faster than starting from a blank slate.",
+        "EXAMPLE": "Välitän LKV. An aging legacy website transformed into a modern digital tool for customer acquisition."
+      }
+    },
+    "SECTION_2": {
+      "TITLE": "E-commerce & SEO",
+      "SUBTITLE": "",
+      "SERVICE_1": {
+        "TITLE": "E-commerce Solutions (Shopify)",
+        "LEAD": "Launch a professional online store at a fraction of the cost of custom coding.",
+        "DESCRIPTION": "I use the Shopify platform to provide a secure and easy-to-manage foundation for your store. I handle the creation of the store, the installation of payment methods, and the setup of shipping options. You can focus on selling without worrying about technical details.",
+        "BENEFITS": {
+          "TITLE": "Key Benefits:",
+          "BENEFIT_1": {
+            "TITLE": "Cost-Efficient:",
+            "DESCRIPTION": "Get a high-end store without the massive investment required for custom-built commerce software."
+          },
+          "BENEFIT_2": {
+            "TITLE": "Automated Security:",
+            "DESCRIPTION": "The platform handles security and updates automatically so you can focus on your business."
+          },
+          "BENEFIT_3": {
+            "TITLE": "Built for Growth:",
+            "DESCRIPTION": "The system supports your business from your first order up to tens of thousands of orders per month."
+          }
+        },
+        "EXAMPLE": "Pumppi Lab. A simple yet modern shopping experience designed to turn social media traffic into direct revenue."
+      },
+      "SERVICE_2": {
+        "TITLE": "Strategic & Technical SEO",
+        "LEAD": "My PRO SEO service is a growth package designed to help you outpace competitors and turn Google searches into actual revenue.",
+        "DESCRIPTION": "",
+        "PACKAGE": {
+          "TITLE": "Services Offered:",
+          "ITEM_1": {
+            "TITLE": "Technical Health Checks:",
+            "DESCRIPTION": "I fix the hidden errors that prevent your site from showing up in search results."
+          },
+          "ITEM_2": {
+            "TITLE": "Competitor Intelligence:",
+            "DESCRIPTION": "I analyze exactly what your competitors are doing and find the keywords your customers are actually using."
+          },
+          "ITEM_3": {
+            "TITLE": "Digital Reputation:",
+            "DESCRIPTION": "I strengthen your site's authority by securing links from other reputable websites."
+          },
+          "ITEM_4": {
+            "TITLE": "Quality Content:",
+            "DESCRIPTION": "I handle the production of blog posts and articles to build trust with both search engines and your customers."
+          },
+          "ITEM_5": {
+            "TITLE": "Automated Reach:",
+            "DESCRIPTION": "I build systems that can create hundreds of targeted pages to capture the most important search terms in your industry."
+          }
+        },
+        "EXAMPLE": "Superwider. A platform built for maximum visibility using a professional linking strategy and targeted content."
+      }
+    },
+    "WHY_ME": {
+      "TITLE": "Why Work With Me",
+      "SUBTITLE": "I focus on delivering professional results without unnecessary bureaucracy, delays, or technical limitations.",
+      "REASON_1": {
+        "TITLE": "Fast Delivery (2–4 Weeks)",
+        "DESCRIPTION": "While traditional software agencies often take months to launch a single project, I deliver your first version in 1 to 2 weeks. This draft is fully functional and ready to go live. My iterative development model ensures you see progress in real time and allows us to make adjustments based on real-world use."
+      },
+      "REASON_2": {
+        "TITLE": "Engineering Quality vs. Basic Tools",
+        "DESCRIPTION": "Many providers rely solely on visual no-code tools. While fast to set up, they often result in slow and limited websites. I use the same coding standards as the world's leading tech companies. This ensures your site is faster, more secure, and performs at a level that basic builders cannot reach."
+      },
+      "REASON_3": {
+        "TITLE": "Low Maintenance Costs",
+        "DESCRIPTION": "Poorly built sites lead to expensive technical issues. By building correctly from the start, I ensure your site remains reliable and easy to manage. You skip high monthly fees and complex service integration costs. My maintenance is affordable: averaging only 20€ per month for professional hosting and security updates."
+      },
+      "REASON_4": {
+        "TITLE": "Risk-Free 1 Year Warranty",
+        "DESCRIPTION": "I stand by the quality of my work. If any bugs or issues appear within the first year, I will fix them free of charge. You can trust that your investment is protected by a professional engineer."
+      }
+    },
+    "EXAMPLES": {
+      "ITEMS": {
+        "SUPERWIDER": {
+          "TITLE": "Superwider",
+          "DESCRIPTION": "Performance-based influencer marketing platform."
+        },
+        "PUMPPILAB": {
+          "TITLE": "Pumppi Lab",
+          "DESCRIPTION": "E-commerce and product experience work."
+        },
+        "VALITAN": {
+          "TITLE": "Välitän LKV",
+          "DESCRIPTION": "Service website with a focus on clarity and conversions."
+        },
+        "STEIERMARKS": {
+          "TITLE": "Steiermarks",
+          "DESCRIPTION": "Brand and web presence modernization."
+        }
+      }
+    }
+  },
   "FOOTER": {
     "TITLE": "Contact",
     "EMAIL_LABEL": "Email:",
     "PHONE_LABEL": "Phone:",
     "COPYRIGHT": "© {year} Santeri Ora. All rights reserved."
+  },
+  "LOCALE_SWITCHER": {
+    "LABEL": "Language",
+    "SELECT_ARIA": "Select language",
+    "ARIA_EN": "Switch to English",
+    "ARIA_FI": "Switch to Finnish"
   }
 }

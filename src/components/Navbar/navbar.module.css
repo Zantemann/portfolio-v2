@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   line-height: 0;
 }
 
@@ -14,8 +15,103 @@
   width: auto;
 }
 
-@media (max-width: 900px) {
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  line-height: 1;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  line-height: 1;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navLinkAccent {
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: rgba(8, 10, 14, 0.6);
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.navLinkAccent::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, #7cffe1, #74b6ff, #f7ff89, #7cffe1);
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: navSpin 4s linear infinite;
+  z-index: -1;
+}
+
+.navLinkAccent::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: calc(5px - 1px);
+  background: rgba(10, 12, 16, 0.9);
+  z-index: -1;
+}
+
+.navLinkAccent:hover {
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(124, 255, 225, 0.35);
+}
+
+.navLinkAccent:focus-visible {
+  outline: 1px solid rgba(124, 255, 225, 0.8);
+  outline-offset: 3px;
+}
+
+@keyframes navSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
   .navbar {
     padding-bottom: 16px;
+  }
+
+  .navLeft {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 16px;
+  }
+
+  .navLeft {
+    gap: 16px;
+  }
+
+  .navActions {
+    gap: 12px;
   }
 }

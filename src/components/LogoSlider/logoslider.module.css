@@ -56,7 +56,7 @@
   margin: 0 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .logos-slide {
     height: 75px;
   }
