@@ -113,11 +113,11 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
       <div className={Styles.content}>
         <LogoSlider />
       </div>
+      <Projects />
       <div className={Styles.quizSection}>
         <h2 className={Styles.quizTitle}>{t('QUIZ_SECTION_TITLE')}</h2>
         <Quiz />
       </div>
-      <Projects />
     </main>
   );
 }

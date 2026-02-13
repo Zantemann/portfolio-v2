@@ -59,13 +59,13 @@
       "EXAMPLE": "Example:"
     },
     "SECTION_1": {
-      "TITLE": "Engineering & Software Development",
+      "TITLE": "Engineering & Development",
       "SUBTITLE": "I build unique websites for businesses that demand high-performance, professional digital solutions. These are not generic templates: every site is built to support your brand and sales goals.",
       "KEY_BENEFITS": {
         "TITLE": "Key Benefits:",
         "BENEFIT_1": {
           "TITLE": "Peak Performance:",
-          "DESCRIPTION": "I optimize performance so your customers never have to wait for pages to load."
+          "DESCRIPTION": "I optimize performance and user experience for best customer satisfaction and search engine visibility."
         },
         "BENEFIT_2": {
           "TITLE": "Seamless Mobile Experience:",
@@ -82,24 +82,24 @@
       },
       "SERVICE_1": {
         "TITLE": "Custom Websites & Apps",
-        "LEAD": "I build solutions from the ground up to ensure your site is optimized to reach more visitors and turn them into paying customers.",
-        "DESCRIPTION": "",
-        "EXAMPLE": "A complex web application designed for managing large amounts of data and demanding integrations."
+        "LEAD": "I build unique solutions from the ground up to ensure your site has no technical roadblocks and is optimized to reach more customers.",
+        "DESCRIPTION": "Every line of code is written to support your specific sales goals. By using scalable architecture, I ensure your site performs at its peak on both mobile and desktop, providing a professional experience that generic templates cannot match.",
+        "EXAMPLE": "A high-performance web application designed for seamless growth and demanding integrations."
       },
       "SERVICE_2": {
         "TITLE": "Website Modernization",
-        "LEAD": "Upgrade your existing site into a powerful tool in half the time.",
-        "DESCRIPTION": "If your current site is slow or outdated, rebuilding it is often more profitable than patching old code. I use your current site as a map, allowing me to deliver a superior, updated version with your desired changes much faster than starting from a blank slate.",
-        "EXAMPLE": "An aging legacy website transformed into a modern digital tool for customer acquisition."
+        "LEAD": "Transform your slow or outdated site into a powerful tool in half the usual time.",
+        "DESCRIPTION": "Rebuilding is more profitable than patching old code. I use your current website as a map to deliver a superior version with modernized features and a fresh user experience, getting you to market faster than starting from scratch.",
+        "EXAMPLE": "A legacy business site transformed into a modern tool for high-speed customer acquisition."
       }
     },
     "SECTION_2": {
       "TITLE": "E-commerce & SEO",
-      "SUBTITLE": "",
+      "SUBTITLE": "I build growth-focused commerce and search engine visibility systems that turn traffic into revenue, combining reliable storefronts with search strategies that scale.",
       "SERVICE_1": {
-        "TITLE": "E-commerce Solutions (Shopify)",
-        "LEAD": "Launch a professional online store at a fraction of the cost of custom coding.",
-        "DESCRIPTION": "I use the Shopify platform to provide a secure and easy-to-manage foundation for your store. I handle the creation of the store, the installation of payment methods, and the setup of shipping options. You can focus on selling without worrying about technical details.",
+        "TITLE": "Shopify E-commerce Solutions",
+        "LEAD": "Launch a professional online store with automated security and tools built for high growth.",
+        "DESCRIPTION": "I handle the technical setup from payment methods to shipping options. You get a secure, easy to manage foundation that can handle thousands of orders, allowing you to focus on your business while the platform handles the updates.",
         "BENEFITS": {
           "TITLE": "Key Benefits:",
           "BENEFIT_1": {
@@ -115,33 +115,29 @@
             "DESCRIPTION": "The system supports your business from your first order up to tens of thousands of orders per month."
           }
         },
-        "EXAMPLE": "A simple yet modern shopping experience designed to turn social media traffic into direct revenue."
+        "EXAMPLE": "A modern shopping experience designed to turn social media traffic into direct revenue."
       },
       "SERVICE_2": {
         "TITLE": "Strategic & Technical SEO",
-        "LEAD": "My PRO SEO service is a growth package designed to help you outpace competitors and turn Google searches into actual revenue.",
-        "DESCRIPTION": "",
+        "LEAD": "A comprehensive growth package designed to outpace rivals by turning search intent into revenue.",
+        "DESCRIPTION": "This service pairs deep technical optimization with a clear growth strategy. I map real customer intent, remove performance and indexing barriers, and build a scalable content and authority plan that compounds visibility over time.",
         "PACKAGE": {
           "TITLE": "Services Offered:",
           "ITEM_1": {
-            "TITLE": "Technical Health Checks:",
-            "DESCRIPTION": "I fix the hidden errors that prevent your site from showing up in search results."
+            "TITLE": "Competitor & Search Term Analysis:",
+            "DESCRIPTION": "I analyze exactly what your rivals are doing to identify the high-value keywords your customers are actually using."
           },
           "ITEM_2": {
-            "TITLE": "Competitor Intelligence:",
-            "DESCRIPTION": "I analyze exactly what your competitors are doing and find the keywords your customers are actually using."
+            "TITLE": "Content Planning & Creation:",
+            "DESCRIPTION": "I handle the strategy and production of search-optimized content that builds trust with your audience and search engines."
           },
           "ITEM_3": {
-            "TITLE": "Digital Reputation:",
-            "DESCRIPTION": "I strengthen your site's authority by securing links from other reputable websites."
+            "TITLE": "Link Building & Digital Reputation:",
+            "DESCRIPTION": "I strengthen your authority by securing links from reputable websites to ensure you stay at the top of search and AI results."
           },
           "ITEM_4": {
-            "TITLE": "Quality Content:",
-            "DESCRIPTION": "I handle the production of blog posts and articles to build trust with both search engines and your customers."
-          },
-          "ITEM_5": {
-            "TITLE": "Automated Reach:",
-            "DESCRIPTION": "I build systems that can create hundreds of targeted pages to capture the most important search terms in your industry."
+            "TITLE": "Automated Visibility Systems:",
+            "DESCRIPTION": "For custom projects, I build technical systems that automatically expand your reach across thousands of relevant search terms."
           }
         },
         "EXAMPLE": "A platform built for maximum visibility using a professional linking strategy and targeted content."
@@ -203,8 +199,8 @@
     "MAINTENANCE": "Affordable professional maintenance starting from 20€ per month.",
     "TIMELINE": "First version ready to publish in 1 to 2 weeks.",
     "CTA": {
-      "TITLE": "Ready to Get Started?",
-      "DESCRIPTION": "Let's discuss how these services can help your business grow.",
+      "TITLE": "Ready to take the next step?",
+      "DESCRIPTION": "Let's work together to design a solution that helps your business reach its goals and grow.",
       "EMAIL_LABEL": "Email:",
       "PHONE_LABEL": "Phone:",
       "OR_TEXT": "or"
@@ -217,8 +213,8 @@
       },
       "Q2": {
         "QUESTION": "What is your primary goal for the project?",
-        "OPTION_1": "Refresh current style",
-        "OPTION_1_SUB": "Keep existing content and structure but modernize the look.",
+        "OPTION_1": "Refresh current style and content",
+        "OPTION_1_SUB": "Keep basic idea of the old website and modernize it's structure and content.",
         "OPTION_2": "Fully new page",
         "OPTION_2_SUB": "Complete overhaul with new features and fresh content."
       },
@@ -276,17 +272,17 @@
         "TITLE": "Strategic SEO",
         "DESCRIPTION_AGGRESSIVE": "Shopify handles the technical foundation automatically. We focus on strategic growth through competitor intelligence to turn searches into revenue.",
         "DESCRIPTION_FOUNDATION": "We maximize your Shopify store's potential by focusing on the keywords and content your current and future customers are looking for.",
-        "BENEFIT_1": "Competitor Intelligence",
-        "BENEFIT_2": "Digital Reputation Building",
-        "BENEFIT_3": "Quality Content Production"
+        "BENEFIT_1": "Competitor & Search Term Analysis",
+        "BENEFIT_2": "Content Planning & Creation",
+        "BENEFIT_3": "Link Building & Digital Reputation"
       },
       "SEO_CUSTOM": {
         "TITLE": "Strategic and Technical SEO",
-        "DESCRIPTION_AGGRESSIVE": "A growth package designed to outpace rivals. Includes competitor intelligence and technical systems for maximum visibility in search and AI results.",
-        "DESCRIPTION_FOUNDATION": "Professional coding standards ensure Google reads your site correctly. We maintain high standards to keep your site visible and authoritative.",
-        "BENEFIT_1": "Technical Health Checks",
-        "BENEFIT_2": "Keyword Analysis",
-        "BENEFIT_3": "Search-Optimized Content"
+        "DESCRIPTION_AGGRESSIVE": "A growth package designed to outpace rivals. We build custom technical systems that automatically expand your visibility across a massive range of search terms, ensuring you are found by every possible customer.",
+        "DESCRIPTION_FOUNDATION": "A solid technical foundation makes your site a trusted leader in your industry. We combine this with active reputation building to ensure you stay authoritative and at the top of search results.",
+        "BENEFIT_1": "Competitor & Search Term Analysis",
+        "BENEFIT_2": "Content Planning & Creation",
+        "BENEFIT_3": "Link Building & Digital Reputation"
       }
     }
   },

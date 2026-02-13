@@ -41,12 +41,31 @@ const initializeQuizState = (): QuizState => {
 export default function Quiz() {
   const t = useTranslations('QUIZ');
   const n = useTranslations('NAVIGATION');
-  const [state, setState] = useState<QuizState>(initializeQuizState);
+  const [state, setState] = useState<QuizState>({
+    answers: {},
+    currentStep: -1,
+    isFinished: false,
+  });
+  const [hasHydrated, setHasHydrated] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = globalThis.setTimeout(() => {
+      setState(initializeQuizState());
+      setHasHydrated(true);
+    }, 0);
+
+    return () => {
+      globalThis.clearTimeout(timeoutId);
+    };
+  }, []);
 
   // Save quiz state to localStorage whenever it changes
   useEffect(() => {
+    if (!hasHydrated) {
+      return;
+    }
     localStorage.setItem('quizState', JSON.stringify(state));
-  }, [state]);
+  }, [hasHydrated, state]);
 
   // Build questions and recommendations with translations
   const questions = buildQuizQuestions(t);

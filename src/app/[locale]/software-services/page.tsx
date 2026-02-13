@@ -61,6 +61,157 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
     STEIERMARKS: 'https://steiermarks.fi',
   } as const;
 
+  const sectionOneBenefits = {
+    title: t('SECTION_1.KEY_BENEFITS.TITLE'),
+    items: [
+      {
+        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_1.TITLE'),
+        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_1.DESCRIPTION'),
+      },
+      {
+        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_2.TITLE'),
+        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_2.DESCRIPTION'),
+      },
+      {
+        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_3.TITLE'),
+        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_3.DESCRIPTION'),
+      },
+      {
+        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_4.TITLE'),
+        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_4.DESCRIPTION'),
+      },
+    ],
+  };
+
+  type DetailItem = { title: string; description: string };
+  type Service = {
+    id: string;
+    number: string;
+    title: string;
+    lead: string;
+    description: string;
+    details?: {
+      title: string;
+      items: DetailItem[];
+    };
+    example: {
+      link: string;
+      label: string;
+      text: string;
+    };
+  };
+  type Section = {
+    number: string;
+    title: string;
+    subtitle: string;
+    services: Service[];
+  };
+
+  const sections: Section[] = [
+    {
+      number: 'I.',
+      title: t('SECTION_1.TITLE'),
+      subtitle: t('SECTION_1.SUBTITLE'),
+      services: [
+        {
+          id: n('SERVICES.ANCHORS.CUSTOM'),
+          number: '01.',
+          title: t('SECTION_1.SERVICE_1.TITLE'),
+          lead: t('SECTION_1.SERVICE_1.LEAD'),
+          description: t('SECTION_1.SERVICE_1.DESCRIPTION'),
+          details: sectionOneBenefits,
+          example: {
+            link: exampleLinks.SUPERWIDER,
+            label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
+            text: t('SECTION_1.SERVICE_1.EXAMPLE'),
+          },
+        },
+        {
+          id: n('SERVICES.ANCHORS.MODERNIZATION'),
+          number: '02.',
+          title: t('SECTION_1.SERVICE_2.TITLE'),
+          lead: t('SECTION_1.SERVICE_2.LEAD'),
+          description: t('SECTION_1.SERVICE_2.DESCRIPTION'),
+          details: sectionOneBenefits,
+          example: {
+            link: exampleLinks.VALITAN,
+            label: t('EXAMPLES.ITEMS.VALITAN.TITLE'),
+            text: t('SECTION_1.SERVICE_2.EXAMPLE'),
+          },
+        },
+      ],
+    },
+    {
+      number: 'II.',
+      title: t('SECTION_2.TITLE'),
+      subtitle: t('SECTION_2.SUBTITLE'),
+      services: [
+        {
+          id: n('SERVICES.ANCHORS.SHOPIFY'),
+          number: '03.',
+          title: t('SECTION_2.SERVICE_1.TITLE'),
+          lead: t('SECTION_2.SERVICE_1.LEAD'),
+          description: t('SECTION_2.SERVICE_1.DESCRIPTION'),
+          details: {
+            title: t('SECTION_2.SERVICE_1.BENEFITS.TITLE'),
+            items: [
+              {
+                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.TITLE'),
+                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.DESCRIPTION'),
+              },
+              {
+                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.TITLE'),
+                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.DESCRIPTION'),
+              },
+              {
+                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.TITLE'),
+                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.DESCRIPTION'),
+              },
+            ],
+          },
+          example: {
+            link: exampleLinks.PUMPPILAB,
+            label: t('EXAMPLES.ITEMS.PUMPPILAB.TITLE'),
+            text: t('SECTION_2.SERVICE_1.EXAMPLE'),
+          },
+        },
+        {
+          id: n('SERVICES.ANCHORS.SEO'),
+          number: '04.',
+          title: t('SECTION_2.SERVICE_2.TITLE'),
+          lead: t('SECTION_2.SERVICE_2.LEAD'),
+          description: t('SECTION_2.SERVICE_2.DESCRIPTION'),
+          details: {
+            title: t('SECTION_2.SERVICE_2.PACKAGE.TITLE'),
+            items: [
+              {
+                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.TITLE'),
+                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.DESCRIPTION'),
+              },
+              {
+                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.TITLE'),
+                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.DESCRIPTION'),
+              },
+              {
+                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.TITLE'),
+                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.DESCRIPTION'),
+              },
+              {
+                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.TITLE'),
+                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.DESCRIPTION'),
+              },
+            ],
+          },
+          example: {
+            link: exampleLinks.SUPERWIDER,
+            label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
+            text: t('SECTION_2.SERVICE_2.EXAMPLE'),
+          },
+        },
+      ],
+    },
+  ];
+
   return (
     <main className={Styles.main}>
       <script
@@ -77,177 +228,54 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
       {/* Quiz Section */}
       <Quiz />
 
-      {/* Section I: Engineering & Development */}
-      <section className={Styles.section}>
-        <h2 className={Styles.sectionTitle}>
-          <span className={Styles.sectionNumber}>I.</span>
-          {t('SECTION_1.TITLE')}
-        </h2>
-        <p className={Styles.sectionSubtitle}>{t('SECTION_1.SUBTITLE')}</p>
+      {sections.map((section) => (
+        <section key={section.number} className={Styles.section}>
+          <h2 className={Styles.sectionTitle}>
+            <span className={Styles.sectionNumber}>{section.number}</span>
+            {section.title}
+          </h2>
+          <p className={Styles.sectionSubtitle}>{section.subtitle}</p>
 
-        <div className={Styles.benefitsList}>
-          <h4>{t('SECTION_1.KEY_BENEFITS.TITLE')}</h4>
-          <ul className={Styles.list}>
-            <li>
-              <strong>{t('SECTION_1.KEY_BENEFITS.BENEFIT_1.TITLE')}</strong>{' '}
-              {t('SECTION_1.KEY_BENEFITS.BENEFIT_1.DESCRIPTION')}
-            </li>
-            <li>
-              <strong>{t('SECTION_1.KEY_BENEFITS.BENEFIT_2.TITLE')}</strong>{' '}
-              {t('SECTION_1.KEY_BENEFITS.BENEFIT_2.DESCRIPTION')}
-            </li>
-            <li>
-              <strong>{t('SECTION_1.KEY_BENEFITS.BENEFIT_3.TITLE')}</strong>{' '}
-              {t('SECTION_1.KEY_BENEFITS.BENEFIT_3.DESCRIPTION')}
-            </li>
-            <li>
-              <strong>{t('SECTION_1.KEY_BENEFITS.BENEFIT_4.TITLE')}</strong>{' '}
-              {t('SECTION_1.KEY_BENEFITS.BENEFIT_4.DESCRIPTION')}
-            </li>
-          </ul>
-        </div>
+          {section.services.map((service) => (
+            <div key={service.number} className={Styles.serviceBlock} id={service.id}>
+              <div className={Styles.serviceHeader}>
+                <span className={Styles.serviceNumber}>{service.number}</span>
+                <h3>{service.title}</h3>
+              </div>
+              <p className={Styles.serviceLead}>{service.lead}</p>
+              {service.description ? (
+                <p className={Styles.serviceDescription}>{service.description}</p>
+              ) : null}
 
-        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.CUSTOM')}>
-          <div className={Styles.serviceHeader}>
-            <span className={Styles.serviceNumber}>01.</span>
-            <h3>{t('SECTION_1.SERVICE_1.TITLE')}</h3>
-          </div>
-          <p className={Styles.serviceLead}>{t('SECTION_1.SERVICE_1.LEAD')}</p>
-          <p className={Styles.serviceDescription}>{t('SECTION_1.SERVICE_1.DESCRIPTION')}</p>
+              {service.details ? (
+                <div className={Styles.subsection}>
+                  <h4>{service.details.title}</h4>
+                  <ul className={Styles.list}>
+                    {service.details.items.map((item) => (
+                      <li key={item.title}>
+                        <strong>{item.title}</strong> {item.description}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
 
-          <p className={Styles.example}>
-            <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
-            <a
-              href={exampleLinks.SUPERWIDER}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.exampleLink}
-            >
-              {t('EXAMPLES.ITEMS.SUPERWIDER.TITLE')}
-            </a>
-            : {t('SECTION_1.SERVICE_1.EXAMPLE')}
-          </p>
-        </div>
-
-        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.MODERNIZATION')}>
-          <div className={Styles.serviceHeader}>
-            <span className={Styles.serviceNumber}>02.</span>
-            <h3>{t('SECTION_1.SERVICE_2.TITLE')}</h3>
-          </div>
-          <p className={Styles.serviceLead}>{t('SECTION_1.SERVICE_2.LEAD')}</p>
-          <p className={Styles.serviceDescription}>{t('SECTION_1.SERVICE_2.DESCRIPTION')}</p>
-
-          <p className={Styles.example}>
-            <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
-            <a
-              href={exampleLinks.VALITAN}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.exampleLink}
-            >
-              {t('EXAMPLES.ITEMS.VALITAN.TITLE')}
-            </a>
-            : {t('SECTION_1.SERVICE_2.EXAMPLE')}
-          </p>
-        </div>
-      </section>
-
-      {/* Section II: Commerce & Growth */}
-      <section className={Styles.section}>
-        <h2 className={Styles.sectionTitle}>
-          <span className={Styles.sectionNumber}>II.</span>
-          {t('SECTION_2.TITLE')}
-        </h2>
-        <p className={Styles.sectionSubtitle}>{t('SECTION_2.SUBTITLE')}</p>
-
-        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.SHOPIFY')}>
-          <div className={Styles.serviceHeader}>
-            <span className={Styles.serviceNumber}>03.</span>
-            <h3>{t('SECTION_2.SERVICE_1.TITLE')}</h3>
-          </div>
-          <p className={Styles.serviceLead}>{t('SECTION_2.SERVICE_1.LEAD')}</p>
-          <p className={Styles.serviceDescription}>{t('SECTION_2.SERVICE_1.DESCRIPTION')}</p>
-
-          <div className={Styles.subsection}>
-            <h4>{t('SECTION_2.SERVICE_1.BENEFITS.TITLE')}</h4>
-            <ul className={Styles.list}>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.DESCRIPTION')}
-              </li>
-            </ul>
-          </div>
-
-          <p className={Styles.example}>
-            <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
-            <a
-              href={exampleLinks.PUMPPILAB}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.exampleLink}
-            >
-              {t('EXAMPLES.ITEMS.PUMPPILAB.TITLE')}
-            </a>
-            : {t('SECTION_2.SERVICE_1.EXAMPLE')}
-          </p>
-        </div>
-
-        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.SEO')}>
-          <div className={Styles.serviceHeader}>
-            <span className={Styles.serviceNumber}>04.</span>
-            <h3>{t('SECTION_2.SERVICE_2.TITLE')}</h3>
-          </div>
-          <p className={Styles.serviceLead}>{t('SECTION_2.SERVICE_2.LEAD')}</p>
-          <p className={Styles.serviceDescription}>{t('SECTION_2.SERVICE_2.DESCRIPTION')}</p>
-
-          <div className={Styles.subsection}>
-            <h4>{t('SECTION_2.SERVICE_2.PACKAGE.TITLE')}</h4>
-            <ul className={Styles.list}>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.DESCRIPTION')}
-              </li>
-              <li>
-                <strong>{t('SECTION_2.SERVICE_2.PACKAGE.ITEM_5.TITLE')}</strong>{' '}
-                {t('SECTION_2.SERVICE_2.PACKAGE.ITEM_5.DESCRIPTION')}
-              </li>
-            </ul>
-          </div>
-
-          <p className={Styles.example}>
-            <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
-            <a
-              href={exampleLinks.SUPERWIDER}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.exampleLink}
-            >
-              {t('EXAMPLES.ITEMS.SUPERWIDER.TITLE')}
-            </a>
-            : {t('SECTION_2.SERVICE_2.EXAMPLE')}
-          </p>
-        </div>
-      </section>
+              <p className={Styles.example}>
+                <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
+                <a
+                  href={service.example.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={Styles.exampleLink}
+                >
+                  {service.example.label}
+                </a>
+                : {service.example.text}
+              </p>
+            </div>
+          ))}
+        </section>
+      ))}
 
       {/* Why Work With Me section */}
       <section className={Styles.section}>

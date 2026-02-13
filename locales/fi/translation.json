@@ -59,13 +59,13 @@
       "EXAMPLE": "Esimerkki:"
     },
     "SECTION_1": {
-      "TITLE": "Suunnittelu ja ohjelmistokehitys",
+      "TITLE": "Suunnittelu ja Kehitys",
       "SUBTITLE": "Rakennan yksilöllisiä verkkosivustoja yrityksille, jotka vaativat suorituskykyisiä ja ammattimaisia digitaalisia ratkaisuja. Kyseessä eivät ole geneeriset valmispohjat, vaan jokainen sivusto rakennetaan tukemaan brändiäsi ja myyntitavoitteitasi.",
       "KEY_BENEFITS": {
         "TITLE": "Keskeiset edut:",
         "BENEFIT_1": {
           "TITLE": "Huippuluokan nopeus:",
-          "DESCRIPTION": "Optimoin suorituskyvyn niin, ettei asiakkaidesi tarvitse koskaan odottaa sivujen latautumista."
+          "DESCRIPTION": "Optimoin suorituskyvyn ja käyttökokemuksen parhaan asiakastyytyväisyyden ja hakukonenäkyvyyden varmistamiseksi."
         },
         "BENEFIT_2": {
           "TITLE": "Saumaton mobiilikokemus:",
@@ -81,25 +81,25 @@
         }
       },
       "SERVICE_1": {
-        "TITLE": "Räätälöidyt verkkosivut ja sovellukset",
-        "LEAD": "Toteutan ratkaisut perusteista alkaen varmistaakseni, että sivustosi on optimoitu tavoittamaan uusia kävijöitä ja muuttamaan heidät maksaviksi asiakkaiksi.",
-        "DESCRIPTION": "",
-        "EXAMPLE": "Monimutkainen verkkosovellus, joka on suunniteltu suuren tietomäärän hallintaan ja vaativiin integraatioihin."
+        "TITLE": "Räätälöidyt sivustot ja sovellukset",
+        "LEAD": "Rakennan ratkaisut alusta alkaen ilman teknisiä rajoitteita varmistaakseni, että sivustosi on optimoitu tavoittamaan enemmän asiakkaita.",
+        "DESCRIPTION": "Jokainen rivi koodia on kirjoitettu tukemaan myyntitavoitteitasi. Käyttämällä skaalautuvaa arkkitehtuuria varmistan, että sivustosi toimii täydellisesti mobiilissa ja työpöydällä tarjoten kokemuksen, johon valmispohjat eivät pysty.",
+        "EXAMPLE": "Huippunopea verkkosovellus, joka on suunniteltu saumattomaan kasvuun ja vaativiin integraatioihin."
       },
       "SERVICE_2": {
-        "TITLE": "Verkkosivujen modernisointi",
-        "LEAD": "Päivitä nykyinen sivustosi tehokkaaksi työkaluksi puolessa ajassa.",
-        "DESCRIPTION": "Jos nykyinen sivustosi on hidas tai vanhentunut, sen uudelleenrakentaminen on usein kannattavampaa kuin vanhan koodin paikkaaminen. Käytän nykyistä sivustoasi pohjana, jolloin pystyn toimittamaan laadukkaamman ja päivitetyn version toivomillasi muutoksilla huomattavasti nopeammin kuin tyhjästä aloittaessa.",
-        "EXAMPLE": "Vanhentunut sivusto muutettiin moderniksi digitaaliseksi työkaluksi asiakashankintaan."
+        "TITLE": "Sivuston Modernisointi",
+        "LEAD": "Muuta hidas tai vanhentunut sivustosi tehokkaaksi työkaluksi puolessa tavallisesta ajasta.",
+        "DESCRIPTION": "Uudelleenrakentaminen on kannattavampaa kuin vanhan koodin paikkailu. Käytän nykyistä sivustoasi pohjana ja toimitamme paremman version uudistetuilla toiminnoilla, mikä tuo sinut markkinoille nopeammin kuin tyhjästä aloittaminen.",
+        "EXAMPLE": "Vanhentunut yrityssivusto muutettuna moderniksi työkaluksi nopeaan asiakashankintaan."
       }
     },
     "SECTION_2": {
       "TITLE": "Verkkokauppa ja SEO",
-      "SUBTITLE": "",
+      "SUBTITLE": "Rakennan kasvua tukevat verkkokauppa- ja hakukonenäkyvyyden ratkaisut, jotka muuttavat liikenteen myynniksi ja skaalautuvat liiketoimintasi mukana.",
       "SERVICE_1": {
-        "TITLE": "Verkkokaupparatkaisut (Shopify)",
-        "LEAD": "Julkaise ammattimainen verkkokauppa murto-osalla räätälöidyn koodauksen kustannuksista.",
-        "DESCRIPTION": "Käytän Shopify-alustaa, joka tarjoaa turvallisen ja helposti hallittavan pohjan kaupallesi. Huolehdin verkkokaupan luonnista, maksutapojen asentamisesta ja toimitustapojen lisäämisestä. Voit keskittyä myyntiin ilman huolta teknisistä yksityiskohdista.",
+        "TITLE": "Shopify-verkkokaupparatkaisut",
+        "LEAD": "Julkaise ammattimainen verkkokauppa, jossa on automaattinen tietoturva ja työkalut kovaan kasvuun.",
+        "DESCRIPTION": "Hoidan teknisen toteutuksen maksuista toimituksiin. Saat turvallisen ja helppokäyttöisen pohjan, joka kestää tuhansia tilauksia, jotta voit keskittyä liiketoimintaasi alustan hoitaessa päivitykset.",
         "BENEFITS": {
           "TITLE": "Keskeiset hyödyt:",
           "BENEFIT_1": {
@@ -115,33 +115,29 @@
             "DESCRIPTION": "Järjestelmä tukee yritystäsi ensimmäisestä tilauksesta aina kymmeniin tuhansiin tilauksiin kuukaudessa."
           }
         },
-        "EXAMPLE": "Yksinkertainen mutta moderni verkkokauppa, joka muuttaa sosiaalisen median liikenteen suoraksi liikevaihdoksi."
+        "EXAMPLE": "Moderni ostokokemus, joka muuttaa sosiaalisen median liikenteen suoraan myynniksi."
       },
       "SERVICE_2": {
-        "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
-        "LEAD": "PRO SEO -palveluni on kasvupaketti, joka auttaa sinua ohittamaan kilpailijasi ja muuttamaan Google-haut todelliseksi tuotoksi.",
-        "DESCRIPTION": "",
+        "TITLE": "Strateginen ja tekninen SEO",
+        "LEAD": "Kokonaisvaltainen kasvupaketti, joka on suunniteltu ohittamaan kilpailijat muuttamalla haut liikevaihdoksi.",
+        "DESCRIPTION": "Palvelu yhdistää syvän teknisen optimoinnin ja selkeän kasvustrategian. Kartoitamme asiakkaiden todelliset hakuasanat, poistamme suorituskyvyn ja indeksoinnin esteet sekä rakennamme skaalautuvan sisaltö- ja auktoriteettisuunnitelman, joka kasvattaa näkyvyyttä ajan myotä.",
         "PACKAGE": {
           "TITLE": "Tarjottavia palveluita:",
           "ITEM_1": {
-            "TITLE": "Tekninen kuntotarkastus:",
-            "DESCRIPTION": "Korjaan näkymättömät virheet, jotka estävät sivustoasi näkymästä hakutuloksissa."
+            "TITLE": "Kilpailija- ja hakutermianalyysi:",
+            "DESCRIPTION": "Analysoin kilpailijoidesi strategiat löytääkseni ne arvokkaat avainsanat, joita asiakkaasi todella käyttävät."
           },
           "ITEM_2": {
-            "TITLE": "Kilpailija-analyysi:",
-            "DESCRIPTION": "Selvitän tarkalleen mitä kilpailijasi tekevät ja löydän avainsanat, joita asiakkaasi todella käyttävät."
+            "TITLE": "Sisällön suunnittelu ja tuotanto:",
+            "DESCRIPTION": "Hoidan hakukoneoptimoidun sisällön strategian ja tuotannon, joka rakentaa luottamusta yleisösi ja hakukoneiden välille."
           },
           "ITEM_3": {
-            "TITLE": "Digitaalinen maine:",
-            "DESCRIPTION": "Vahvistan sivustosi auktoriteettia hankkimalla linkityksiä muilta arvostetuilta sivustoilta."
+            "TITLE": "Linkkien rakentaminen ja digitaalinen maine:",
+            "DESCRIPTION": "Vahvistan auktoriteettiasi hankkimalla linkkejä arvostetuilta sivustoilta varmistaakseni kärkisijat hauissa ja tekoälytuloksissa."
           },
           "ITEM_4": {
-            "TITLE": "Laadukas sisältö:",
-            "DESCRIPTION": "Huolehdin blogitekstien ja artikkelien tuotannosta, mikä rakentaa luottamusta sekä hakukoneiden että asiakkaiden silmissä."
-          },
-          "ITEM_5": {
-            "TITLE": "Automaattinen näkyvyys:",
-            "DESCRIPTION": "Rakennan järjestelmiä, jotka luovat satoja kohdennettuja sivuja tavoittamaan juuri sinun toimialasi tärkeimmät hakutermit."
+            "TITLE": "Automaattiset näkyvyysjärjestelmät:",
+            "DESCRIPTION": "Räätälöidyissä projekteissa rakennan teknisiä järjestelmiä, jotka laajentavat näkyvyyttäsi automaattisesti tuhansiin merkittäviin hakutermeihin."
           }
         },
         "EXAMPLE": "Alusta, jonka näkyvyys maksimoitiin ammattimaisella linkitysstrategialla ja kohdennetulla sisällöllä."
@@ -203,8 +199,8 @@
     "MAINTENANCE": "Edullinen ammattilaisylläpito alkaen 20 € kuukaudessa.",
     "TIMELINE": "Ensimmäinen versio julkaisuvalmis 1–2 viikossa.",
     "CTA": {
-      "TITLE": "Oletko valmis aloittamaan?",
-      "DESCRIPTION": "Keskustellaan siitä, miten nämä palvelut voivat auttaa yritystäsi kasvamaan.",
+      "TITLE": "Oletko valmis ottamaan seuraavan askeleen?",
+      "DESCRIPTION": "Suunnitellaan yhdessä ratkaisu, joka auttaa yritystäsi saavuttamaan tavoitteensa ja kasvamaan.",
       "EMAIL_LABEL": "Sähköposti:",
       "PHONE_LABEL": "Puhelin:",
       "OR_TEXT": "tai"
@@ -216,9 +212,9 @@
         "OPTION_2": "Ei, aloitan tyhjästä"
       },
       "Q2": {
-        "QUESTION": "Mikä on projektisi ensisijainen tavoite?",
-        "OPTION_1": "Tyylin uudistaminen",
-        "OPTION_1_SUB": "Pidetään nykyinen sisältö ja rakenne, mutta modernisoidaan ulkoasu.",
+        "QUESTION": "Mikä on projektin ensisijainen tavoite?",
+        "OPTION_1": "Nykyisen tyylin ja sisällön päivitys",
+        "OPTION_1_SUB": "Säilytetään vanhan sivuston perusidea ja modernisoidaan sen rakenne sekä sisältö.",
         "OPTION_2": "Täysin uusi sivu",
         "OPTION_2_SUB": "Kokonaisvaltainen uudistus uusilla toiminnoilla ja tuoreella sisällöllä."
       },
@@ -274,19 +270,19 @@
       },
       "SEO_SHOPIFY": {
         "TITLE": "Strateginen hakukoneoptimointi",
-        "DESCRIPTION_AGGRESSIVE": "Shopify hoitaa teknisen perustan automaattisesti. Me keskitymme strategiseen kasvuun kilpailija-analyysin avulla muuttaaksemme haut liikevaihdoksi.",
-        "DESCRIPTION_FOUNDATION": "Maksimoimme Shopify-kauppasi potentiaalin keskittymällä avainsanoihin ja sisältöön, jota nykyiset ja tulevat asiakkaasi etsivät.",
-        "BENEFIT_1": "Kilpailija-analyysi",
-        "BENEFIT_2": "Digitaalisen maineen rakentaminen",
-        "BENEFIT_3": "Laadukas sisällöntuotanto"
+        "DESCRIPTION_AGGRESSIVE": "Shopify hoitaa teknisen perustan automaattisesti. Me keskitymme strategiseen kasvuun hyödyntämällä kilpailijatietoa muuttaaksemme haut suoraan liikevaihdoksi.",
+        "DESCRIPTION_FOUNDATION": "Maksimoimme Shopify-kauppasi potentiaalin keskittymällä juuri niihin avainsanoihin ja sisältöihin, joita nykyiset ja tulevat asiakkaasi etsivät.",
+        "BENEFIT_1": "Kilpailija- ja hakusana-analyysi",
+        "BENEFIT_2": "Sisällön suunnittelu ja tuotanto",
+        "BENEFIT_3": "Linkkien rakentaminen ja digitaalinen maine"
       },
       "SEO_CUSTOM": {
         "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
-        "DESCRIPTION_AGGRESSIVE": "Kasvupaketti, joka on suunniteltu ohittamaan kilpailijat. Sisältää kilpailija-analyysin ja tekniset järjestelmät maksimaaliseen näkyvyyteen hakukoneissa ja tekoälytuloksissa.",
-        "DESCRIPTION_FOUNDATION": "Ammattimaiset koodausstandardit varmistavat, että Google lukee sivustoasi oikein. Pidämme yllä korkeaa tasoa, jotta sivustosi pysyy näkyvänä ja auktoriteettisena.",
-        "BENEFIT_1": "Tekniset kuntotarkastukset",
-        "BENEFIT_2": "Avainsana-analyysi",
-        "BENEFIT_3": "Hakukoneoptimoitu sisältö"
+        "DESCRIPTION_AGGRESSIVE": "Kasvupaketti, joka on suunniteltu ohittamaan kilpailijat. Rakennamme räätälöityjä teknisiä järjestelmiä, jotka laajentavat näkyvyyttäsi automaattisesti kattamaan valtavan määrän hakutermejä varmistaen, että jokainen mahdollinen asiakas löytää luoksesi.",
+        "DESCRIPTION_FOUNDATION": "Vahva tekninen perusta tekee sivustostasi alasi luotetun johtajan. Yhdistämme tämän aktiiviseen maineen rakentamiseen varmistaaksemme, että pysyt auktoriteettina hakutulosten kärjessä.",
+        "BENEFIT_1": "Kilpailija- ja hakusana-analyysi",
+        "BENEFIT_2": "Sisällön suunnittelu ja tuotanto",
+        "BENEFIT_3": "Linkkien rakentaminen ja digitaalinen maine"
       }
     }
   },
