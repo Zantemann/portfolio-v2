@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Styles from './page.module.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
 import Projects from '@/components/Projects/Projects';
+import Quiz from '@/components/Quiz/Quiz';
 import { getTranslations } from 'next-intl/server';
 import { SCHEMA_CONTEXT, JsonLdArray } from '@/utils/schema';
 import type { Organization, WebPage, WebSite } from 'schema-dts';
@@ -36,7 +37,7 @@ export async function generateMetadata() {
   };
 }
 
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+export default async function Home({ params }: Readonly<{ params: Promise<{ locale: string }> }>) {
   const t = await getTranslations('HOME');
   const n = await getTranslations('NAVIGATION');
   const { locale } = await params;
@@ -111,6 +112,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </div>
       <div className={Styles.content}>
         <LogoSlider />
+      </div>
+      <div className={Styles.quizSection}>
+        <h2 className={Styles.quizTitle}>{t('QUIZ_SECTION_TITLE')}</h2>
+        <Quiz />
       </div>
       <Projects />
     </main>

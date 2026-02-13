@@ -4,7 +4,13 @@
       "PATH": "/"
     },
     "SERVICES": {
-      "PATH": "/software-services"
+      "PATH": "/software-services",
+      "ANCHORS": {
+        "CUSTOM": "custom-services",
+        "MODERNIZATION": "modernization",
+        "SHOPIFY": "shopify-solutions",
+        "SEO": "seo-optimization"
+      }
     }
   },
   "NAVBAR": {
@@ -31,7 +37,8 @@
     "INTRO_P1": "Hi, I'm Santeri Ora, a Lean-driven full-stack developer and a second-time founder. I specialize in building scalable web applications, combining deep technical expertise with a strong business understanding.",
     "INTRO_P2": "I graduated at the end of 2025 with a Master's degree in Computer Science from Tampere University. Currently, I am focused on scaling my company, Superwider, where I am building a data-driven platform that automates performance-based influencer marketing through social media integrations.",
     "INTRO_P3": "I'm passionate about solving complex technical challenges and turning business needs into efficient software solutions. Let's connect, and don't forget to check out Superwider!",
-    "PROFILE_ALT": "Santeri Ora"
+    "PROFILE_ALT": "Santeri Ora",
+    "QUIZ_SECTION_TITLE": "Need a New Website or Other Software Service?"
   },
   "LOGO_SLIDER": {
     "TITLE": "Core Expertise"
@@ -77,13 +84,13 @@
         "TITLE": "Custom Websites & Apps",
         "LEAD": "I build solutions from the ground up to ensure your site is optimized to reach more visitors and turn them into paying customers.",
         "DESCRIPTION": "",
-        "EXAMPLE": "Superwider. A complex web application designed for managing large amounts of data and demanding integrations."
+        "EXAMPLE": "A complex web application designed for managing large amounts of data and demanding integrations."
       },
       "SERVICE_2": {
         "TITLE": "Website Modernization",
         "LEAD": "Upgrade your existing site into a powerful tool in half the time.",
         "DESCRIPTION": "If your current site is slow or outdated, rebuilding it is often more profitable than patching old code. I use your current site as a map, allowing me to deliver a superior, updated version with your desired changes much faster than starting from a blank slate.",
-        "EXAMPLE": "Välitän LKV. An aging legacy website transformed into a modern digital tool for customer acquisition."
+        "EXAMPLE": "An aging legacy website transformed into a modern digital tool for customer acquisition."
       }
     },
     "SECTION_2": {
@@ -108,7 +115,7 @@
             "DESCRIPTION": "The system supports your business from your first order up to tens of thousands of orders per month."
           }
         },
-        "EXAMPLE": "Pumppi Lab. A simple yet modern shopping experience designed to turn social media traffic into direct revenue."
+        "EXAMPLE": "A simple yet modern shopping experience designed to turn social media traffic into direct revenue."
       },
       "SERVICE_2": {
         "TITLE": "Strategic & Technical SEO",
@@ -137,7 +144,7 @@
             "DESCRIPTION": "I build systems that can create hundreds of targeted pages to capture the most important search terms in your industry."
           }
         },
-        "EXAMPLE": "Superwider. A platform built for maximum visibility using a professional linking strategy and targeted content."
+        "EXAMPLE": "A platform built for maximum visibility using a professional linking strategy and targeted content."
       }
     },
     "WHY_ME": {
@@ -178,6 +185,108 @@
           "TITLE": "Steiermarks",
           "DESCRIPTION": "Brand and web presence modernization."
         }
+      }
+    }
+  },
+  "QUIZ": {
+    "INTRO": {
+      "TITLE": "Website Service Discovery Quiz",
+      "DESCRIPTION": "Answer a few quick questions to discover which website services best match your business needs."
+    },
+    "START_BUTTON": "Start Quiz",
+    "NEXT_BUTTON": "Next",
+    "PREVIOUS_BUTTON": "Previous",
+    "RESULTS_TITLE": "Your Recommended Services",
+    "RESTART_BUTTON": "Start Over",
+    "READ_MORE": "Read more",
+    "WARRANTY": "Risk-free 1 year warranty.",
+    "MAINTENANCE": "Affordable professional maintenance starting from 20€ per month.",
+    "TIMELINE": "First version ready to publish in 1 to 2 weeks.",
+    "CTA": {
+      "TITLE": "Ready to Get Started?",
+      "DESCRIPTION": "Let's discuss how these services can help your business grow.",
+      "EMAIL_LABEL": "Email:",
+      "PHONE_LABEL": "Phone:",
+      "OR_TEXT": "or"
+    },
+    "QUESTIONS": {
+      "Q1": {
+        "QUESTION": "Do you currently have an existing website?",
+        "OPTION_1": "Yes, I have an old website",
+        "OPTION_2": "No, I am starting from scratch"
+      },
+      "Q2": {
+        "QUESTION": "What is your primary goal for the project?",
+        "OPTION_1": "Refresh current style",
+        "OPTION_1_SUB": "Keep existing content and structure but modernize the look.",
+        "OPTION_2": "Fully new page",
+        "OPTION_2_SUB": "Complete overhaul with new features and fresh content."
+      },
+      "Q3": {
+        "QUESTION": "What kind of platform do you need?",
+        "OPTION_1": "Landing Page / Business Site",
+        "OPTION_1_SUB": "I want to showcase services/business and generate leads.",
+        "OPTION_2": "Webstore (E-commerce)",
+        "OPTION_2_SUB": "I want to sell products and take payments online."
+      },
+      "Q4": {
+        "QUESTION": "What is the estimated size of the website?",
+        "OPTION_1": "Small (1 to 10 pages)",
+        "OPTION_2": "Medium (10 to 25 pages)",
+        "OPTION_3": "Large (25+ pages)"
+      },
+      "Q5": {
+        "QUESTION": "What is your primary goal regarding your audience?",
+        "OPTION_1": "Serve current audience",
+        "OPTION_1_SUB": "I have an existing customer base and do not need new ones.",
+        "OPTION_2": "Acquire new business",
+        "OPTION_2_SUB": "I want to reach new customers from search engines and AI."
+      },
+      "Q6": {
+        "QUESTION": "How competitive is your market?",
+        "OPTION_1": "High Competition",
+        "OPTION_1_SUB": "I have local or industry rivals I need to outperform.",
+        "OPTION_2": "Niche / Low Competition",
+        "OPTION_2_SUB": "I don't have many direct competitors to worry about."
+      }
+    },
+    "RECOMMENDATIONS": {
+      "SHOPIFY": {
+        "TITLE": "Shopify E-commerce Solution",
+        "DESCRIPTION": "Launch a professional online store at a fraction of the cost of custom coding. We handle everything from payment methods to shipping setup.",
+        "BENEFIT_1": "Easy to control",
+        "BENEFIT_2": "Handles high order volume",
+        "BENEFIT_3": "Minimal starting investment"
+      },
+      "MODERNIZATION": {
+        "TITLE": "Website Modernization and Development",
+        "DESCRIPTION": "Rebuilding your outdated site is more profitable than patching old code. We use your current site as a map to deliver a superior version faster.",
+        "BENEFIT_1": "Fast delivery",
+        "BENEFIT_2": "Peak Performance",
+        "BENEFIT_3": "Top tech"
+      },
+      "CUSTOM": {
+        "TITLE": "Custom Development",
+        "DESCRIPTION": "Professional digital solutions built from the ground up. These are not generic templates: we focus on performance and business goals.",
+        "BENEFIT_1": "Scalable Architecture",
+        "BENEFIT_2": "No technical roadblocks",
+        "BENEFIT_3": "For specific business needs"
+      },
+      "SEO_SHOPIFY": {
+        "TITLE": "Strategic SEO",
+        "DESCRIPTION_AGGRESSIVE": "Shopify handles the technical foundation automatically. We focus on strategic growth through competitor intelligence to turn searches into revenue.",
+        "DESCRIPTION_FOUNDATION": "We maximize your Shopify store's potential by focusing on the keywords and content your current and future customers are looking for.",
+        "BENEFIT_1": "Competitor Intelligence",
+        "BENEFIT_2": "Digital Reputation Building",
+        "BENEFIT_3": "Quality Content Production"
+      },
+      "SEO_CUSTOM": {
+        "TITLE": "Strategic and Technical SEO",
+        "DESCRIPTION_AGGRESSIVE": "A growth package designed to outpace rivals. Includes competitor intelligence and technical systems for maximum visibility in search and AI results.",
+        "DESCRIPTION_FOUNDATION": "Professional coding standards ensure Google reads your site correctly. We maintain high standards to keep your site visible and authoritative.",
+        "BENEFIT_1": "Technical Health Checks",
+        "BENEFIT_2": "Keyword Analysis",
+        "BENEFIT_3": "Search-Optimized Content"
       }
     }
   },

@@ -4,7 +4,13 @@
       "PATH": "/"
     },
     "SERVICES": {
-      "PATH": "/ohjelmistopalvelut"
+      "PATH": "/fi/ohjelmistopalvelut",
+      "ANCHORS": {
+        "CUSTOM": "raataloidut-palvelut",
+        "MODERNIZATION": "modernisointi",
+        "SHOPIFY": "shopify-ratkaisut",
+        "SEO": "hakukoneoptimointi"
+      }
     }
   },
   "NAVBAR": {
@@ -31,7 +37,8 @@
     "INTRO_P1": "Moi, olen Santeri Ora, Lean-ajatteluun nojaava full-stack-kehittäjä ja yrittäjä. Erikoisalaani on skaalautuvien verkkosovellusten rakentaminen. Yhdistän työssäni syvän teknisen osaamisen vahvaan liiketoimintaymmärrykseen.",
     "INTRO_P2": "Valmistuin vuoden 2025 lopussa tietotekniikan maisteriksi Tampereen yliopistosta. Tällä hetkellä keskityn kasvattamaan yritystäni Superwideria, jossa rakennan datapohjaista alustaa tulospohjaisen vaikuttajamarkkinoinnin automatisointiin sosiaalisen median integraatioiden avulla.",
     "INTRO_P3": "Innostun monimutkaisten teknisten haasteiden ratkomisesta ja tehokkaiden ohjelmistoratkaisujen kehittämisestä liiketoimintatarpeisiin. Verkostoidutaan ja muista käydä tsekkaamassa Superwider!",
-    "PROFILE_ALT": "Santeri Ora"
+    "PROFILE_ALT": "Santeri Ora",
+    "QUIZ_SECTION_TITLE": "Tarvitsetko uuden verkkosivun tai muun ohjelmistopalvelun?"
   },
   "LOGO_SLIDER": {
     "TITLE": "Ydinosaaminen"
@@ -77,13 +84,13 @@
         "TITLE": "Räätälöidyt verkkosivut ja sovellukset",
         "LEAD": "Toteutan ratkaisut perusteista alkaen varmistaakseni, että sivustosi on optimoitu tavoittamaan uusia kävijöitä ja muuttamaan heidät maksaviksi asiakkaiksi.",
         "DESCRIPTION": "",
-        "EXAMPLE": "Superwider. Monimutkainen verkkosovellus, joka on suunniteltu suuren tietomäärän hallintaan ja vaativiin integraatioihin."
+        "EXAMPLE": "Monimutkainen verkkosovellus, joka on suunniteltu suuren tietomäärän hallintaan ja vaativiin integraatioihin."
       },
       "SERVICE_2": {
         "TITLE": "Verkkosivujen modernisointi",
         "LEAD": "Päivitä nykyinen sivustosi tehokkaaksi työkaluksi puolessa ajassa.",
         "DESCRIPTION": "Jos nykyinen sivustosi on hidas tai vanhentunut, sen uudelleenrakentaminen on usein kannattavampaa kuin vanhan koodin paikkaaminen. Käytän nykyistä sivustoasi pohjana, jolloin pystyn toimittamaan laadukkaamman ja päivitetyn version toivomillasi muutoksilla huomattavasti nopeammin kuin tyhjästä aloittaessa.",
-        "EXAMPLE": "Välitän LKV. Vanhentunut sivusto muutettiin moderniksi digitaaliseksi työkaluksi asiakashankintaan."
+        "EXAMPLE": "Vanhentunut sivusto muutettiin moderniksi digitaaliseksi työkaluksi asiakashankintaan."
       }
     },
     "SECTION_2": {
@@ -108,7 +115,7 @@
             "DESCRIPTION": "Järjestelmä tukee yritystäsi ensimmäisestä tilauksesta aina kymmeniin tuhansiin tilauksiin kuukaudessa."
           }
         },
-        "EXAMPLE": "Pumppi Lab. Yksinkertainen mutta moderni verkkokauppa, joka muuttaa sosiaalisen median liikenteen suoraksi liikevaihdoksi."
+        "EXAMPLE": "Yksinkertainen mutta moderni verkkokauppa, joka muuttaa sosiaalisen median liikenteen suoraksi liikevaihdoksi."
       },
       "SERVICE_2": {
         "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
@@ -137,7 +144,7 @@
             "DESCRIPTION": "Rakennan järjestelmiä, jotka luovat satoja kohdennettuja sivuja tavoittamaan juuri sinun toimialasi tärkeimmät hakutermit."
           }
         },
-        "EXAMPLE": "Superwider. Alusta, jonka näkyvyys maksimoitiin ammattimaisella linkitysstrategialla ja kohdennetulla sisällöllä."
+        "EXAMPLE": "Alusta, jonka näkyvyys maksimoitiin ammattimaisella linkitysstrategialla ja kohdennetulla sisällöllä."
       }
     },
     "WHY_ME": {
@@ -178,6 +185,108 @@
           "TITLE": "Steiermarks",
           "DESCRIPTION": "Brändi- ja verkkonäkyvyyden modernisointi."
         }
+      }
+    }
+  },
+  "QUIZ": {
+    "INTRO": {
+      "TITLE": "Verkkopalveluiden kartoituskysely",
+      "DESCRIPTION": "Vastaa muutamaan lyhyeen kysymykseen selvittääksesi, mitkä verkkopalvelut vastaavat parhaiten yrityksesi tarpeita."
+    },
+    "START_BUTTON": "Aloita kysely",
+    "NEXT_BUTTON": "Seuraava",
+    "PREVIOUS_BUTTON": "Edellinen",
+    "RESULTS_TITLE": "Suositellut palvelut",
+    "RESTART_BUTTON": "Aloita alusta",
+    "READ_MORE": "Lue lisää",
+    "WARRANTY": "Riskitön yhden vuoden takuu.",
+    "MAINTENANCE": "Edullinen ammattilaisylläpito alkaen 20 € kuukaudessa.",
+    "TIMELINE": "Ensimmäinen versio julkaisuvalmis 1–2 viikossa.",
+    "CTA": {
+      "TITLE": "Oletko valmis aloittamaan?",
+      "DESCRIPTION": "Keskustellaan siitä, miten nämä palvelut voivat auttaa yritystäsi kasvamaan.",
+      "EMAIL_LABEL": "Sähköposti:",
+      "PHONE_LABEL": "Puhelin:",
+      "OR_TEXT": "tai"
+    },
+    "QUESTIONS": {
+      "Q1": {
+        "QUESTION": "Onko sinulla tällä hetkellä olemassa olevat verkkosivut?",
+        "OPTION_1": "Kyllä, minulla on vanhat sivut",
+        "OPTION_2": "Ei, aloitan tyhjästä"
+      },
+      "Q2": {
+        "QUESTION": "Mikä on projektisi ensisijainen tavoite?",
+        "OPTION_1": "Tyylin uudistaminen",
+        "OPTION_1_SUB": "Pidetään nykyinen sisältö ja rakenne, mutta modernisoidaan ulkoasu.",
+        "OPTION_2": "Täysin uusi sivu",
+        "OPTION_2_SUB": "Kokonaisvaltainen uudistus uusilla toiminnoilla ja tuoreella sisällöllä."
+      },
+      "Q3": {
+        "QUESTION": "Millaisen alustan tarvitset?",
+        "OPTION_1": "Laskeutumissivu / Yrityssivusto",
+        "OPTION_1_SUB": "Haluan esitellä palveluita tai liiketoimintaa ja kerätä liidejä.",
+        "OPTION_2": "Verkkokauppa (E-commerce)",
+        "OPTION_2_SUB": "Haluan myydä tuotteita ja vastaanottaa maksuja verkossa."
+      },
+      "Q4": {
+        "QUESTION": "Mikä on verkkosivuston arvioitu koko?",
+        "OPTION_1": "Pieni (1–10 sivua)",
+        "OPTION_2": "Keskikokoinen (10–25 sivua)",
+        "OPTION_3": "Suuri (25+ sivua)"
+      },
+      "Q5": {
+        "QUESTION": "Mikä on ensisijainen tavoitteesi yleisösi suhteen?",
+        "OPTION_1": "Nykyisen yleisön palveleminen",
+        "OPTION_1_SUB": "Minulla on olemassa oleva asiakaskunta enkä tarvitse uusia asiakkaita.",
+        "OPTION_2": "Uuden liiketoiminnan hankkiminen",
+        "OPTION_2_SUB": "Haluan tavoittaa uusia asiakkaita hakukoneista ja tekoälystä."
+      },
+      "Q6": {
+        "QUESTION": "Kuinka kilpailtu markkinasi on?",
+        "OPTION_1": "Kova kilpailu",
+        "OPTION_1_SUB": "Minulla on paikallisia tai toimialan kilpailijoita, jotka haluan voittaa.",
+        "OPTION_2": "Niche / Vähäinen kilpailu",
+        "OPTION_2_SUB": "Minulla ei ole monia suoria kilpailijoita huolehdittavana."
+      }
+    },
+    "RECOMMENDATIONS": {
+      "SHOPIFY": {
+        "TITLE": "Shopify-verkkokaupparatkaisu",
+        "DESCRIPTION": "Julkaise ammattimainen verkkokauppa murto-osalla räätälöidyn koodauksen kustannuksista. Me hoidamme kaiken maksutavoista toimitusasetuksiin.",
+        "BENEFIT_1": "Helppo hallita",
+        "BENEFIT_2": "Kestää suuria tilausmääriä",
+        "BENEFIT_3": "Minimaalinen alkuinvestointi"
+      },
+      "MODERNIZATION": {
+        "TITLE": "Verkkosivuston modernisointi ja kehitys",
+        "DESCRIPTION": "Vanhentuneen sivuston uudelleenrakentaminen on kannattavampaa kuin vanhan koodin paikkailu. Käytämme nykyistä sivustoasi pohjana ja toimitamme paremman version nopeammin.",
+        "BENEFIT_1": "Nopea toimitus",
+        "BENEFIT_2": "Huippuluokan suorituskyky",
+        "BENEFIT_3": "Uusin teknologia"
+      },
+      "CUSTOM": {
+        "TITLE": "Räätälöity kehitys",
+        "DESCRIPTION": "Ammattimaiset digitaaliset ratkaisut rakennettuna alusta alkaen. Nämä eivät ole yleisiä valmispohjia: keskitymme suorituskykyyn ja liiketoiminnan tavoitteisiin.",
+        "BENEFIT_1": "Skaalautuva arkkitehtuuri",
+        "BENEFIT_2": "Ei teknisiä esteitä",
+        "BENEFIT_3": "Tiettyihin liiketoiminnan tarpeisiin"
+      },
+      "SEO_SHOPIFY": {
+        "TITLE": "Strateginen hakukoneoptimointi",
+        "DESCRIPTION_AGGRESSIVE": "Shopify hoitaa teknisen perustan automaattisesti. Me keskitymme strategiseen kasvuun kilpailija-analyysin avulla muuttaaksemme haut liikevaihdoksi.",
+        "DESCRIPTION_FOUNDATION": "Maksimoimme Shopify-kauppasi potentiaalin keskittymällä avainsanoihin ja sisältöön, jota nykyiset ja tulevat asiakkaasi etsivät.",
+        "BENEFIT_1": "Kilpailija-analyysi",
+        "BENEFIT_2": "Digitaalisen maineen rakentaminen",
+        "BENEFIT_3": "Laadukas sisällöntuotanto"
+      },
+      "SEO_CUSTOM": {
+        "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
+        "DESCRIPTION_AGGRESSIVE": "Kasvupaketti, joka on suunniteltu ohittamaan kilpailijat. Sisältää kilpailija-analyysin ja tekniset järjestelmät maksimaaliseen näkyvyyteen hakukoneissa ja tekoälytuloksissa.",
+        "DESCRIPTION_FOUNDATION": "Ammattimaiset koodausstandardit varmistavat, että Google lukee sivustoasi oikein. Pidämme yllä korkeaa tasoa, jotta sivustosi pysyy näkyvänä ja auktoriteettisena.",
+        "BENEFIT_1": "Tekniset kuntotarkastukset",
+        "BENEFIT_2": "Avainsana-analyysi",
+        "BENEFIT_3": "Hakukoneoptimoitu sisältö"
       }
     }
   },

@@ -1,4 +1,5 @@
 import Styles from './page.module.css';
+import Quiz from '@/components/Quiz/Quiz';
 import { getTranslations } from 'next-intl/server';
 import type { WebPage } from 'schema-dts';
 import { SCHEMA_CONTEXT, JsonLdArray } from '@/utils/schema';
@@ -73,6 +74,9 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
         <p>{t('INTRO')}</p>
       </div>
 
+      {/* Quiz Section */}
+      <Quiz />
+
       {/* Section I: Engineering & Development */}
       <section className={Styles.section}>
         <h2 className={Styles.sectionTitle}>
@@ -103,7 +107,7 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
           </ul>
         </div>
 
-        <div className={Styles.serviceBlock}>
+        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.CUSTOM')}>
           <div className={Styles.serviceHeader}>
             <span className={Styles.serviceNumber}>01.</span>
             <h3>{t('SECTION_1.SERVICE_1.TITLE')}</h3>
@@ -125,7 +129,7 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
           </p>
         </div>
 
-        <div className={Styles.serviceBlock}>
+        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.MODERNIZATION')}>
           <div className={Styles.serviceHeader}>
             <span className={Styles.serviceNumber}>02.</span>
             <h3>{t('SECTION_1.SERVICE_2.TITLE')}</h3>
@@ -156,7 +160,7 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
         </h2>
         <p className={Styles.sectionSubtitle}>{t('SECTION_2.SUBTITLE')}</p>
 
-        <div className={Styles.serviceBlock}>
+        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.SHOPIFY')}>
           <div className={Styles.serviceHeader}>
             <span className={Styles.serviceNumber}>03.</span>
             <h3>{t('SECTION_2.SERVICE_1.TITLE')}</h3>
@@ -196,7 +200,7 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
           </p>
         </div>
 
-        <div className={Styles.serviceBlock}>
+        <div className={Styles.serviceBlock} id={n('SERVICES.ANCHORS.SEO')}>
           <div className={Styles.serviceHeader}>
             <span className={Styles.serviceNumber}>04.</span>
             <h3>{t('SECTION_2.SERVICE_2.TITLE')}</h3>
