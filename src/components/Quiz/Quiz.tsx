@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import type { QuizAnswers, QuestionId } from '@/types/quiz';
 import { getRecommendations } from '@/utils/quizEngine';
 import { buildQuizQuestions } from '@/utils/quizQuestions';
@@ -40,7 +39,6 @@ const initializeQuizState = (): QuizState => {
 
 export default function Quiz() {
   const t = useTranslations('QUIZ');
-  const n = useTranslations('NAVIGATION');
   const [state, setState] = useState<QuizState>({
     answers: {},
     currentStep: -1,
@@ -70,20 +68,6 @@ export default function Quiz() {
   // Build questions and recommendations with translations
   const questions = buildQuizQuestions(t);
   const recommendations = buildRecommendations(t);
-
-  // Map recommendation titles to their localized anchors
-  const getAnchorForService = (title: string): string => {
-    if (title === recommendations.custom.title) {
-      return n('SERVICES.ANCHORS.CUSTOM');
-    }
-    if (title === recommendations.modernization.title) {
-      return n('SERVICES.ANCHORS.MODERNIZATION');
-    }
-    if (title === recommendations.shopify.title) {
-      return n('SERVICES.ANCHORS.SHOPIFY');
-    }
-    return n('SERVICES.ANCHORS.SEO');
-  };
 
   // Filter questions based on conditions
   const availableQuestions = questions.filter((q) => {
@@ -127,9 +111,6 @@ export default function Quiz() {
     setState((prev) => ({ ...prev, currentStep: 0 }));
   };
 
-  // Build services path based on localized translation
-  const servicesPath = n('SERVICES.PATH');
-
   // Intro screen
   if (state.currentStep === -1) {
     return (
@@ -166,12 +147,6 @@ export default function Quiz() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href={`${servicesPath}#${getAnchorForService(result.primaryService.title)}`}
-                  className={Styles.readMoreLink}
-                >
-                  {t('READ_MORE')}
-                </Link>
               </div>
 
               {result.secondaryService && (
@@ -185,12 +160,6 @@ export default function Quiz() {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    href={`${servicesPath}#${getAnchorForService(result.secondaryService.title)}`}
-                    className={Styles.readMoreLink}
-                  >
-                    {t('READ_MORE')}
-                  </Link>
                 </div>
               )}
             </div>

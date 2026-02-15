@@ -1,10 +1,9 @@
 /* Desktop-first responsive design matching page styles */
-/* Breakpoints: 1280px (lg), 1024px (md), 768px (sm), 480px (xs) */
+/* Breakpoints: 1280px (lg), 1024px (md), 768px (sm) */
 
 /* Base Container Styles */
 .quizContainer {
   width: 100%;
-  max-width: 800px;
 }
 
 .resultsContainer {
@@ -19,27 +18,27 @@
 .introScreen,
 .questionScreen,
 .resultsScreen {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
 }
 
 .resultsScreen .title {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2xl);
 }
 
 .resultsContent {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--space-xl);
 }
 
 /* Service Cards Grid */
 .serviceCardsContainer {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: var(--space-lg);
 }
 
 @media (min-width: 1024px) {
@@ -50,34 +49,28 @@
 
 /* Typography - Desktop */
 .title {
-  font-size: 2rem;
-  font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--foreground, #ededed);
 }
 
 .introText {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1rem; /* R - Regular body text */
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-2xl);
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-tertiary);
 }
 
 .questionText {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2xl);
   text-align: center;
-  color: var(--foreground, #ededed);
 }
 
 .questionNumber {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: rgba(124, 255, 225, 0.9);
-  margin-bottom: 1rem;
+  font-size: 0.875rem; /* S */
+  font-weight: var(--font-medium);
+  color: var(--accent-primary);
+  margin-bottom: var(--space-md);
   text-align: center;
 }
 
@@ -86,20 +79,20 @@
 .restartButton {
   display: block;
   margin: 0 auto;
-  padding: 1rem 2.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #0a0a0a;
-  background: rgba(124, 255, 225, 0.9);
+  padding: var(--space-md) 2.5rem;
+  font-size: 1rem; /* R - Regular button text */
+  font-weight: var(--font-medium);
+  color: var(--background);
+  background: var(--accent-primary);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .startButton:hover,
 .restartButton:hover {
-  background: rgba(124, 255, 225, 1);
+  background: var(--accent-hover);
   transform: translateY(-2px);
 }
 
@@ -107,32 +100,32 @@
   display: inline;
   background: none;
   border: none;
-  color: rgba(124, 255, 225, 0.9);
+  color: var(--accent-primary);
   text-decoration: underline;
-  font-size: 0.95rem;
+  font-size: 0.875rem; /* S - Small action link */
   cursor: pointer;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   transition: color 0.2s ease;
 }
 
 .restartLink:hover {
-  color: rgba(124, 255, 225, 1);
+  color: var(--accent-hover);
 }
 
 /* Progress Bar */
 .progressBar {
   width: 100%;
   height: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-xl);
   overflow: hidden;
 }
 
 .progressFill {
   height: 100%;
-  background: rgba(124, 255, 225, 0.9);
+  background: var(--accent-primary);
   transition: width 0.3s ease;
 }
 
@@ -140,214 +133,210 @@
 .optionsContainer {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
 }
 
 .optionButton {
   padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
   text-align: left;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .optionButton:hover {
-  border-color: rgba(124, 255, 225, 0.5);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent-soft);
+  background: var(--bg-hover);
 }
 
 .optionButton.selected {
-  border-color: rgba(124, 255, 225, 0.9);
-  background: rgba(124, 255, 225, 0.1);
+  border-color: var(--accent-primary);
+  background: var(--accent-bg);
 }
 
 .optionLabel {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--foreground, #ededed);
+  font-size: 1.125rem; /* M - Emphasized option */
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .optionSublabel {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.4;
+  font-size: 0.875rem; /* S - Small helper text */
+  color: var(--text-tertiary);
+  line-height: var(--leading-tight);
 }
 
 /* Navigation Buttons */
 .navigationButtons {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
 .previousButton,
 .nextButton {
   padding: 0.875rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1rem; /* R - Regular button text */
+  font-weight: var(--font-medium);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .previousButton {
-  color: var(--foreground, #ededed);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg-hover);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
 }
 
 .previousButton:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: var(--bg-elevated);
+  border-color: var(--border-hover);
 }
 
 .nextButton {
-  color: #0a0a0a;
-  background: rgba(124, 255, 225, 0.9);
+  color: var(--background);
+  background: var(--accent-primary);
   margin-left: auto;
 }
 
 .nextButton:hover:not(:disabled) {
-  background: rgba(124, 255, 225, 1);
+  background: var(--accent-hover);
   transform: translateY(-2px);
 }
 
 .nextButton:disabled {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--bg-elevated);
   cursor: not-allowed;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-muted);
 }
 
 /* Service Card - Desktop */
 .serviceCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
   padding: 1.75rem;
 }
 
 .serviceTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: rgba(124, 255, 225, 0.9);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-md);
+  color: var(--accent-primary);
 }
 
 .serviceDescription {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1rem; /* R - Regular description */
+  line-height: var(--leading-relaxed);
   margin-bottom: 1.25rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-tertiary);
 }
 
 .readMoreLink {
   display: inline-block;
-  margin-top: 1rem;
-  color: rgba(124, 255, 225, 0.9);
+  margin-top: var(--space-md);
+  color: var(--accent-primary);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--font-medium);
+  font-size: 1rem; /* R - Regular link text */
   transition:
     color 0.2s ease,
     text-decoration 0.2s ease;
-  border-bottom: 1px solid rgba(124, 255, 225, 0.9);
+  border-bottom: 1px solid var(--accent-primary);
 }
 
 .readMoreLink:hover {
-  color: rgba(124, 255, 225, 1);
-  border-bottom-color: rgba(124, 255, 225, 1);
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
 }
 
 /* Benefits List */
 .benefitsList {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-xs);
 }
 
 .benefitItem {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-xl);
   position: relative;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem; /* R - Regular list item */
+  color: var(--text-secondary);
 }
 
 .benefitItem::before {
   content: '✓';
   position: absolute;
   left: 0;
-  color: rgba(124, 255, 225, 0.9);
-  font-weight: 700;
+  color: var(--accent-primary);
+  font-weight: var(--font-bold);
 }
 
 @media (min-width: 768px) {
   .benefitsList {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 1.5rem;
+    column-gap: var(--space-xl);
     row-gap: 0;
   }
 
   .benefitItem {
     flex: 0 0 auto;
     padding: 0;
-    padding-left: 1.5rem;
+    padding-left: var(--space-xl);
   }
 }
 
 /* Brand Messaging */
 .brandMessaging {
-  background: rgba(124, 255, 225, 0.05);
-  border-left: 4px solid rgba(124, 255, 225, 0.9);
-  padding: 1.5rem;
-  border-radius: 4px;
+  background: var(--accent-bg-soft);
+  border-left: 4px solid var(--accent-primary);
+  padding: var(--space-xl);
+  border-radius: var(--radius-sm);
 }
 
 .brandItem {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-xl);
   position: relative;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0;
+  font-size: 1rem; /* R - Regular list item */
+  color: var(--text-secondary);
 }
 
 .brandItem::before {
   content: '✓';
   position: absolute;
   left: 0;
-  color: rgba(124, 255, 225, 0.9);
-  font-weight: 700;
+  color: var(--accent-primary);
+  font-weight: var(--font-bold);
 }
 
 /* CTA Section - Desktop */
 .ctaSection {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
 }
 
 .ctaTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   margin-bottom: 0.75rem;
-  color: var(--foreground, #ededed);
 }
 
 .ctaDescription {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem; /* R - Regular description */
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-xl);
+  color: var(--text-tertiary);
 }
 
 /* Contact Info */
@@ -355,33 +344,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 }
 
 .contactItem {
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0;
+  font-size: 1rem; /* R - Regular text */
+  color: var(--text-secondary);
 }
 
 .contactLink {
-  color: rgba(124, 255, 225, 0.9);
+  color: var(--accent-primary);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--font-medium);
   transition: color 0.2s ease;
 }
 
 .contactLink:hover {
-  color: rgba(124, 255, 225, 1);
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
 .contactDivider {
   display: none;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.95rem;
-  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.875rem; /* S - Small text */
 }
 
 /* ========== TABLET BREAKPOINT (max-width: 1024px) ========== */
@@ -389,21 +375,19 @@
   .introScreen,
   .questionScreen,
   .resultsScreen {
-    padding: 1.5rem;
+    padding: var(--space-xl);
   }
 
   .title {
-    font-size: 1.5rem;
     margin-bottom: 0.875rem;
   }
 
   .introText {
-    font-size: 1rem;
+    font-size: 1rem; /* R */
     margin-bottom: 1.5rem;
   }
 
   .questionText {
-    font-size: 1.25rem;
     margin-bottom: 1.5rem;
   }
 
@@ -417,11 +401,11 @@
   }
 
   .optionLabel {
-    font-size: 1rem;
+    font-size: 1rem; /* M tablet */
   }
 
   .optionSublabel {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* S */
   }
 
   .serviceCard {
@@ -429,21 +413,20 @@
   }
 
   .serviceTitle {
-    font-size: 1.25rem;
     margin-bottom: 0.875rem;
   }
 
   .serviceDescription {
-    font-size: 0.95rem;
+    font-size: 1rem; /* R */
     margin-bottom: 1rem;
   }
 
   .readMoreLink {
-    font-size: 0.95rem;
+    font-size: 1rem; /* R */
   }
 
   .benefitItem {
-    font-size: 0.95rem;
+    font-size: 1rem; /* R */
   }
 
   .brandMessaging {
@@ -451,7 +434,7 @@
   }
 
   .brandItem {
-    font-size: 0.95rem;
+    font-size: 1rem; /* R */
     padding: 0.375rem 0;
     padding-left: 1.5rem;
   }
@@ -461,29 +444,28 @@
   }
 
   .ctaTitle {
-    font-size: 1.5rem;
     margin-bottom: 0.625rem;
   }
 
   .ctaDescription {
-    font-size: 1rem;
+    font-size: 1rem; /* R */
     margin-bottom: 1.25rem;
   }
 
   .contactItem {
-    font-size: 1rem;
+    font-size: 1rem; /* R */
   }
 
   .startButton,
   .restartButton {
     padding: 0.875rem 2rem;
-    font-size: 1rem;
+    font-size: 1rem; /* R */
   }
 
   .previousButton,
   .nextButton {
     padding: 0.75rem 1.75rem;
-    font-size: 0.95rem;
+    font-size: 1rem; /* R */
   }
 }
 
@@ -496,17 +478,15 @@
   }
 
   .title {
-    font-size: 1.25rem;
     margin-bottom: 0.75rem;
   }
 
   .introText {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* R mobile */
     margin-bottom: 1.25rem;
   }
 
   .questionText {
-    font-size: 1.125rem;
     margin-bottom: 1.25rem;
   }
 
@@ -524,12 +504,12 @@
   }
 
   .optionLabel {
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* M mobile */
     margin-bottom: 0.2rem;
   }
 
   .optionSublabel {
-    font-size: 0.825rem;
+    font-size: 0.85rem; /* S mobile - Small helper text */
   }
 
   .navigationButtons {
@@ -541,7 +521,7 @@
   .nextButton {
     width: 100%;
     padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* R mobile */
     margin-left: 0;
   }
 
@@ -550,21 +530,20 @@
   }
 
   .serviceTitle {
-    font-size: 1.125rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.625rem;
   }
 
   .serviceDescription {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* R mobile */
     margin-bottom: 0.875rem;
   }
 
   .readMoreLink {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* R mobile */
   }
 
   .benefitItem {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* R mobile */
     padding: 0.375rem 0;
     padding-left: 1.25rem;
   }
@@ -574,7 +553,7 @@
   }
 
   .brandItem {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* R mobile */
     padding: 0.3rem 0;
     padding-left: 1.25rem;
   }
@@ -584,22 +563,20 @@
   }
 
   .ctaTitle {
-    font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
 
   .ctaDescription {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* R mobile */
     margin-bottom: 1rem;
   }
 
   .contactInfo {
-    gap: 0.5rem;
     margin-bottom: 0.875rem;
   }
 
   .contactItem {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* R mobile */
   }
 
   .contactDivider {
@@ -609,7 +586,7 @@
   .startButton,
   .restartButton {
     padding: 0.8rem 1.75rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* R mobile */
   }
 
   .progressBar {
@@ -617,7 +594,7 @@
   }
 
   .restartLink {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* S mobile */
     margin-top: 0.875rem;
   }
 }
@@ -630,24 +607,8 @@
     padding: 0.75rem;
   }
 
-  .title {
-    font-size: 1.125rem;
-    margin-bottom: 0.625rem;
-  }
-
-  .introText {
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-  }
-
-  .questionText {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .questionNumber {
-    font-size: 0.8rem;
-    margin-bottom: 0.75rem;
+  .serviceCardsContainer {
+    gap: var(--space-md);
   }
 
   .optionsContainer {
@@ -657,15 +618,6 @@
 
   .optionButton {
     padding: 0.875rem;
-  }
-
-  .optionLabel {
-    font-size: 0.875rem;
-    margin-bottom: 0.125rem;
-  }
-
-  .optionSublabel {
-    font-size: 0.75rem;
   }
 
   .progressBar {
@@ -680,7 +632,6 @@
   .previousButton,
   .nextButton {
     padding: 0.625rem 1.25rem;
-    font-size: 0.85rem;
     border-radius: 4px;
   }
 
@@ -688,22 +639,7 @@
     padding: 0.75rem;
   }
 
-  .serviceTitle {
-    font-size: 1rem;
-    margin-bottom: 0.625rem;
-  }
-
-  .serviceDescription {
-    font-size: 0.825rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .readMoreLink {
-    font-size: 0.825rem;
-  }
-
   .benefitItem {
-    font-size: 0.825rem;
     padding: 0.25rem 0;
     padding-left: 1.125rem;
   }
@@ -718,43 +654,24 @@
   }
 
   .brandItem {
-    font-size: 0.825rem;
     padding: 0.25rem 0;
     padding-left: 1.125rem;
   }
 
-  .ctaTitle {
-    font-size: 1.125rem;
-    margin-bottom: 0.375rem;
-  }
-
-  .ctaDescription {
-    font-size: 0.875rem;
-    margin-bottom: 0.875rem;
-  }
-
   .contactInfo {
-    gap: 0.375rem;
     margin-bottom: 0.75rem;
-  }
-
-  .contactItem {
-    font-size: 0.875rem;
   }
 
   .contactDivider {
     display: none;
-    font-size: 0.8rem;
   }
 
   .startButton,
   .restartButton {
     padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
   }
 
   .restartLink {
-    font-size: 0.825rem;
     margin-top: 0.75rem;
   }
 }

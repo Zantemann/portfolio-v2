@@ -1,7 +1,9 @@
 import Styles from './page.module.css';
 import Quiz from '@/components/Quiz/Quiz';
+import FAQ from '@/components/FAQ/FAQ';
+import ProcessTimeline from '@/components/ProcessTimeline/ProcessTimeline';
 import { getTranslations } from 'next-intl/server';
-import type { WebPage } from 'schema-dts';
+import type { WebPage, FAQPage } from 'schema-dts';
 import { SCHEMA_CONTEXT, JsonLdArray } from '@/utils/schema';
 
 export async function generateMetadata() {
@@ -41,6 +43,13 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
   const baseUrl = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000';
   const pageUrl = `${baseUrl}${n('SERVICES.PATH')}`;
 
+  const exampleLinks = {
+    SUPERWIDER: 'https://superwider.com',
+    PUMPPILAB: 'https://pumppilab.com',
+    VALITAN: 'https://www.xn--vlitn-grad.fi',
+    STEIERMARKS: 'https://steiermarks.fi',
+  } as const;
+
   const webPageSchema: WebPage = {
     '@type': 'WebPage',
     '@id': `${pageUrl}#webpage`,
@@ -54,212 +63,112 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
       url: `${baseUrl}/opengraph-image.png`,
     },
   };
-  const exampleLinks = {
-    SUPERWIDER: 'https://superwider.com',
-    PUMPPILAB: 'https://pumppilab.com',
-    VALITAN: 'https://www.xn--vlitn-grad.fi',
-    STEIERMARKS: 'https://steiermarks.fi',
-  } as const;
-
-  const sectionOneBenefits = {
-    title: t('SECTION_1.KEY_BENEFITS.TITLE'),
-    items: [
-      {
-        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_1.TITLE'),
-        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_1.DESCRIPTION'),
-      },
-      {
-        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_2.TITLE'),
-        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_2.DESCRIPTION'),
-      },
-      {
-        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_3.TITLE'),
-        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_3.DESCRIPTION'),
-      },
-      {
-        title: t('SECTION_1.KEY_BENEFITS.BENEFIT_4.TITLE'),
-        description: t('SECTION_1.KEY_BENEFITS.BENEFIT_4.DESCRIPTION'),
-      },
-    ],
-  };
-
-  type DetailItem = { title: string; description: string };
-  type Service = {
-    id: string;
-    number: string;
+  type ServiceCard = {
     title: string;
-    lead: string;
     description: string;
-    details?: {
-      title: string;
-      items: DetailItem[];
-    };
+    points: string[];
     example: {
       link: string;
       label: string;
-      text: string;
     };
   };
-  type Section = {
-    number: string;
-    title: string;
-    subtitle: string;
-    services: Service[];
-  };
 
-  const sections: Section[] = [
+  const services: ServiceCard[] = [
     {
-      number: 'I.',
-      title: t('SECTION_1.TITLE'),
-      subtitle: t('SECTION_1.SUBTITLE'),
-      services: [
-        {
-          id: n('SERVICES.ANCHORS.CUSTOM'),
-          number: '01.',
-          title: t('SECTION_1.SERVICE_1.TITLE'),
-          lead: t('SECTION_1.SERVICE_1.LEAD'),
-          description: t('SECTION_1.SERVICE_1.DESCRIPTION'),
-          details: sectionOneBenefits,
-          example: {
-            link: exampleLinks.SUPERWIDER,
-            label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
-            text: t('SECTION_1.SERVICE_1.EXAMPLE'),
-          },
-        },
-        {
-          id: n('SERVICES.ANCHORS.MODERNIZATION'),
-          number: '02.',
-          title: t('SECTION_1.SERVICE_2.TITLE'),
-          lead: t('SECTION_1.SERVICE_2.LEAD'),
-          description: t('SECTION_1.SERVICE_2.DESCRIPTION'),
-          details: sectionOneBenefits,
-          example: {
-            link: exampleLinks.VALITAN,
-            label: t('EXAMPLES.ITEMS.VALITAN.TITLE'),
-            text: t('SECTION_1.SERVICE_2.EXAMPLE'),
-          },
-        },
-      ],
+      title: t('SERVICE_1.TITLE'),
+      description: t('SERVICE_1.DESC'),
+      points: [t('SERVICE_1.POINTS.0'), t('SERVICE_1.POINTS.1'), t('SERVICE_1.POINTS.2')],
+      example: {
+        link: exampleLinks.SUPERWIDER,
+        label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
+      },
     },
     {
-      number: 'II.',
-      title: t('SECTION_2.TITLE'),
-      subtitle: t('SECTION_2.SUBTITLE'),
-      services: [
-        {
-          id: n('SERVICES.ANCHORS.SHOPIFY'),
-          number: '03.',
-          title: t('SECTION_2.SERVICE_1.TITLE'),
-          lead: t('SECTION_2.SERVICE_1.LEAD'),
-          description: t('SECTION_2.SERVICE_1.DESCRIPTION'),
-          details: {
-            title: t('SECTION_2.SERVICE_1.BENEFITS.TITLE'),
-            items: [
-              {
-                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.TITLE'),
-                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_1.DESCRIPTION'),
-              },
-              {
-                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.TITLE'),
-                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_2.DESCRIPTION'),
-              },
-              {
-                title: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.TITLE'),
-                description: t('SECTION_2.SERVICE_1.BENEFITS.BENEFIT_3.DESCRIPTION'),
-              },
-            ],
-          },
-          example: {
-            link: exampleLinks.PUMPPILAB,
-            label: t('EXAMPLES.ITEMS.PUMPPILAB.TITLE'),
-            text: t('SECTION_2.SERVICE_1.EXAMPLE'),
-          },
-        },
-        {
-          id: n('SERVICES.ANCHORS.SEO'),
-          number: '04.',
-          title: t('SECTION_2.SERVICE_2.TITLE'),
-          lead: t('SECTION_2.SERVICE_2.LEAD'),
-          description: t('SECTION_2.SERVICE_2.DESCRIPTION'),
-          details: {
-            title: t('SECTION_2.SERVICE_2.PACKAGE.TITLE'),
-            items: [
-              {
-                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.TITLE'),
-                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_1.DESCRIPTION'),
-              },
-              {
-                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.TITLE'),
-                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_2.DESCRIPTION'),
-              },
-              {
-                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.TITLE'),
-                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_3.DESCRIPTION'),
-              },
-              {
-                title: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.TITLE'),
-                description: t('SECTION_2.SERVICE_2.PACKAGE.ITEM_4.DESCRIPTION'),
-              },
-            ],
-          },
-          example: {
-            link: exampleLinks.SUPERWIDER,
-            label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
-            text: t('SECTION_2.SERVICE_2.EXAMPLE'),
-          },
-        },
-      ],
+      title: t('SERVICE_2.TITLE'),
+      description: t('SERVICE_2.DESC'),
+      points: [t('SERVICE_2.POINTS.0'), t('SERVICE_2.POINTS.1'), t('SERVICE_2.POINTS.2')],
+      example: {
+        link: exampleLinks.VALITAN,
+        label: t('EXAMPLES.ITEMS.VALITAN.TITLE'),
+      },
+    },
+    {
+      title: t('SERVICE_3.TITLE'),
+      description: t('SERVICE_3.DESC'),
+      points: [t('SERVICE_3.POINTS.0'), t('SERVICE_3.POINTS.1'), t('SERVICE_3.POINTS.2')],
+      example: {
+        link: exampleLinks.PUMPPILAB,
+        label: t('EXAMPLES.ITEMS.PUMPPILAB.TITLE'),
+      },
+    },
+    {
+      title: t('SERVICE_4.TITLE'),
+      description: t('SERVICE_4.DESC'),
+      points: [t('SERVICE_4.POINTS.0'), t('SERVICE_4.POINTS.1'), t('SERVICE_4.POINTS.2')],
+      example: {
+        link: exampleLinks.SUPERWIDER,
+        label: t('EXAMPLES.ITEMS.SUPERWIDER.TITLE'),
+      },
     },
   ];
+
+  // Build FAQ items for schema
+  const faqItems = [
+    { question: t('FAQ.ITEM_1.Q'), answer: t('FAQ.ITEM_1.A') },
+    { question: t('FAQ.ITEM_2.Q'), answer: t('FAQ.ITEM_2.A') },
+    { question: t('FAQ.ITEM_3.Q'), answer: t('FAQ.ITEM_3.A') },
+    { question: t('FAQ.ITEM_4.Q'), answer: t('FAQ.ITEM_4.A') },
+    { question: t('FAQ.ITEM_5.Q'), answer: t('FAQ.ITEM_5.A') },
+    { question: t('FAQ.ITEM_6.Q'), answer: t('FAQ.ITEM_6.A') },
+    { question: t('FAQ.ITEM_7.Q'), answer: t('FAQ.ITEM_7.A') },
+    { question: t('FAQ.ITEM_8.Q'), answer: t('FAQ.ITEM_8.A') },
+  ];
+
+  // Build FAQ schema
+  const faqSchema: FAQPage = {
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    name: t('FAQ.TITLE'),
+    url: pageUrl,
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <main className={Styles.main}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JsonLdArray([{ ...webPageSchema, '@context': SCHEMA_CONTEXT }]),
+          __html: JsonLdArray([
+            { ...webPageSchema, '@context': SCHEMA_CONTEXT },
+            { ...faqSchema, '@context': SCHEMA_CONTEXT },
+          ]),
         }}
       />
       <div className={Styles.header}>
         <h1>{t('TITLE')}</h1>
-        <p>{t('INTRO')}</p>
       </div>
 
-      {/* Quiz Section */}
-      <Quiz />
+      <p className={Styles.generalDescription}>{t('GENERAL_DESCRIPTION')}</p>
 
-      {sections.map((section) => (
-        <section key={section.number} className={Styles.section}>
-          <h2 className={Styles.sectionTitle}>
-            <span className={Styles.sectionNumber}>{section.number}</span>
-            {section.title}
-          </h2>
-          <p className={Styles.sectionSubtitle}>{section.subtitle}</p>
-
-          {section.services.map((service) => (
-            <div key={service.number} className={Styles.serviceBlock} id={service.id}>
-              <div className={Styles.serviceHeader}>
-                <span className={Styles.serviceNumber}>{service.number}</span>
-                <h3>{service.title}</h3>
-              </div>
-              <p className={Styles.serviceLead}>{service.lead}</p>
-              {service.description ? (
-                <p className={Styles.serviceDescription}>{service.description}</p>
-              ) : null}
-
-              {service.details ? (
-                <div className={Styles.subsection}>
-                  <h4>{service.details.title}</h4>
-                  <ul className={Styles.list}>
-                    {service.details.items.map((item) => (
-                      <li key={item.title}>
-                        <strong>{item.title}</strong> {item.description}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-
+      <section className="section">
+        <h2 className="section-title">{t('SERVICES_HEADING')}</h2>
+        <div className={Styles.servicesGrid}>
+          {services.map((service) => (
+            <article key={service.title} className={Styles.serviceCard}>
+              <h3 className="text-accent">{service.title}</h3>
+              <p className={Styles.serviceCardDesc}>{service.description}</p>
+              <ul className={Styles.servicePoints}>
+                {service.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
               <p className={Styles.example}>
                 <strong>{t('COMMON.EXAMPLE')}</strong>{' '}
                 <a
@@ -270,37 +179,41 @@ const ServicesPage = async ({ params }: { params: Promise<{ locale: string }> })
                 >
                   {service.example.label}
                 </a>
-                : {service.example.text}
               </p>
-            </div>
+            </article>
           ))}
-        </section>
-      ))}
+        </div>
+      </section>
+
+      {/* Quiz Section */}
+      <Quiz />
 
       {/* Why Work With Me section */}
-      <section className={Styles.section}>
-        <h2 className={Styles.sectionTitle}>{t('WHY_ME.TITLE')}</h2>
-        <p className={Styles.sectionSubtitle}>{t('WHY_ME.SUBTITLE')}</p>
+      <section className="section">
+        <h2 className="section-title">{t('WHY_ME.TITLE')}</h2>
+        <p className="section-subtitle">{t('WHY_ME.SUBTITLE')}</p>
 
         <div className={Styles.reasonsGrid}>
           <div className={Styles.reasonCard}>
-            <h4>{t('WHY_ME.REASON_1.TITLE')}</h4>
+            <h3 className="text-accent">{t('WHY_ME.REASON_1.TITLE')}</h3>
             <p>{t('WHY_ME.REASON_1.DESCRIPTION')}</p>
           </div>
           <div className={Styles.reasonCard}>
-            <h4>{t('WHY_ME.REASON_2.TITLE')}</h4>
+            <h3 className="text-accent">{t('WHY_ME.REASON_2.TITLE')}</h3>
             <p>{t('WHY_ME.REASON_2.DESCRIPTION')}</p>
           </div>
           <div className={Styles.reasonCard}>
-            <h4>{t('WHY_ME.REASON_3.TITLE')}</h4>
+            <h3 className="text-accent">{t('WHY_ME.REASON_3.TITLE')}</h3>
             <p>{t('WHY_ME.REASON_3.DESCRIPTION')}</p>
           </div>
           <div className={Styles.reasonCard}>
-            <h4>{t('WHY_ME.REASON_4.TITLE')}</h4>
+            <h3 className="text-accent">{t('WHY_ME.REASON_4.TITLE')}</h3>
             <p>{t('WHY_ME.REASON_4.DESCRIPTION')}</p>
           </div>
         </div>
       </section>
+      <ProcessTimeline />
+      <FAQ />
     </main>
   );
 };

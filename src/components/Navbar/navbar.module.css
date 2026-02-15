@@ -61,7 +61,22 @@
   left: 50%;
   top: 50%;
   border-radius: inherit;
-  background: conic-gradient(from 0deg, #7cffe1, #74b6ff, #f7ff89, #7cffe1);
+  background: conic-gradient(
+    from 0deg,
+    #7cffe1,
+    #4dccc0,
+    #2a9990,
+    #186660,
+    #2a9990,
+    #4dccc0,
+    #7cffe1,
+    #4dccc0,
+    #2a9990,
+    #186660,
+    #2a9990,
+    #4dccc0,
+    #7cffe1
+  );
   transform: translate(-50%, -50%) rotate(0deg);
   animation: navSpin 4s linear infinite;
   z-index: -1;
@@ -93,10 +108,6 @@
 }
 
 @media (max-width: 1024px) {
-  .navbar {
-    padding-bottom: 16px;
-  }
-
   .navLeft {
     gap: 24px;
   }

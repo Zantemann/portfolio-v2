@@ -4,13 +4,7 @@
       "PATH": "/"
     },
     "SERVICES": {
-      "PATH": "/fi/ohjelmistopalvelut",
-      "ANCHORS": {
-        "CUSTOM": "raataloidut-palvelut",
-        "MODERNIZATION": "modernisointi",
-        "SHOPIFY": "shopify-ratkaisut",
-        "SEO": "hakukoneoptimointi"
-      }
+      "PATH": "/fi/ohjelmistopalvelut"
     }
   },
   "NAVBAR": {
@@ -49,100 +43,54 @@
   "SERVICES": {
     "METADATA": {
       "TITLE": "Ohjelmistopalvelut",
-      "DESCRIPTION": "Tuloshakuista ja kokonaisvaltaista kehitystä moderneille verkkotuotteille. Palveluni on suunniteltu täyttämään tyhjiö rajoittuneiden \"no-code\" -ratkaisujen ja kalliiden, usein kankeiden ohjelmistotoimistojen välillä. Toimitan ensimmäisen julkaisuvalmiin version 1–2 viikossa. Tätä seuraa palautteeseesi perustuva muokkauskierros ja lopulta hienosäätö, joka varmistaa virheettömän lopputuloksen virallista julkaisua varten.",
+      "DESCRIPTION": "Tarjoan asiantuntevia digitaalisia palveluita, jotka auttavat yritystäsi kasvamaan ja erottumaan verkossa. Toteutan jokaisen ratkaisun räätälöidystä koodauksesta ja verkkokaupoista strategiseen näkyvyyteen ilman valmispohjien rajoitteita tai ohjelmistotalojen kankeutta ja korkeita kustannuksia. Näin varmistamme, että sivustosi tukee suoraan liiketoimintasi tavoitteita.",
       "COMPANY_NAME": "Portfolio",
       "LOCALE": "fi_FI"
     },
-    "TITLE": "Ohjelmistopalvelut",
+    "TITLE": "Ohjelmisto\u00adpalvelut",
     "INTRO": "Tuloshakuista ja kokonaisvaltaista kehitystä moderneille verkkotuotteille. Palveluni on suunniteltu täyttämään tyhjiö rajoittuneiden \"no-code\" -ratkaisujen ja kalliiden, usein kankeiden ohjelmistotoimistojen välillä. Toimitan ensimmäisen julkaisuvalmiin version 1–2 viikossa. Tätä seuraa palautteeseesi perustuva muokkauskierros ja lopulta hienosäätö, joka varmistaa virheettömän lopputuloksen virallista julkaisua varten. Katso alta, miten nopea ja asiantunteva otteeni auttaa yritystäsi kasvamaan.",
+    "GENERAL_DESCRIPTION": "Tarjoan asiantuntevia digitaalisia palveluita, jotka auttavat yritystäsi kasvamaan ja erottumaan verkossa. Toteutan jokaisen ratkaisun räätälöidystä koodauksesta ja verkkokaupoista strategiseen näkyvyyteen ilman valmispohjien rajoitteita tai ohjelmistotalojen kankeutta ja korkeita kustannuksia. Näin varmistamme, että sivustosi tukee suoraan liiketoimintasi tavoitteita.",
+    "SERVICES_HEADING": "Palvelut",
+    "SERVICE_1": {
+      "TITLE": "01. Räätälöidyt sivustot ja sovellukset",
+      "DESC": "Rakennan ratkaisut alusta alkaen ilman teknisiä rajoitteita varmistaakseni, että sivustosi on optimoitu tavoittamaan enemmän asiakkaita.",
+      "POINTS": [
+        "Huippuluokan nopeus: Optimoin suorituskyvyn parhaan asiakastyytyväisyyden ja hakukonenäkyvyyden varmistamiseksi.",
+        "Saumaton mobiilikokemus: Sivusto toimii ja näyttää hyvältä kaiken kokoisilla laitteilla.",
+        "Skaalautuva rakenne: Koodi on tehty kasvamaan yrityksesi mukana ilman rajoitteita."
+      ]
+    },
+    "SERVICE_2": {
+      "TITLE": "02. Sivuston modernisointi",
+      "DESC": "Muuta hidas tai vanhentunut sivustosi tehokkaaksi työkaluksi puolessa tavallisesta ajasta.",
+      "POINTS": [
+        "Kustannustehokkuus: Uudelleenrakentaminen on kannattavampaa kuin vanhan koodin paikkailu.",
+        "Nopeampi toimitus: Käytän nykyistä sivustoasi pohjana uudistetuilla toiminnoilla.",
+        "Tekninen laatu: Ammattimainen koodaustapa varmistaa parhaan hakukonenäkyvyyden."
+      ]
+    },
+    "SERVICE_3": {
+      "TITLE": "03. Shopify-verkkokaupparatkaisut",
+      "DESC": "Julkaise ammattimainen verkkokauppa, jossa on automaattinen tietoturva ja työkalut kovaan kasvuun.",
+      "POINTS": [
+        "Avaimet käteen: Hoidan teknisen toteutuksen maksuista toimituksiin asti.",
+        "Automaattinen tietoturva: Alusta huolehtii päivityksistä, jolloin voit keskittyä liiketoimintaasi.",
+        "Rakennettu kasvuun: Järjestelmä tukee yritystäsi ensimmäisestä tilauksesta suuriin määriin."
+      ]
+    },
+    "SERVICE_4": {
+      "TITLE": "04. Strateginen ja tekninen SEO",
+      "DESC": "Kokonaisvaltainen kasvupaketti, joka on suunniteltu ohittamaan kilpailijat muuttamalla haut liikevaihdoksi.",
+      "POINTS": [
+        "Analyysi ja strategia: Kartoitamme arvokkaat hakusanat ja poistamme tekniset esteet.",
+        "Auktoriteetin rakentaminen: Vahvistan mainettasi linkityksillä ja optimoidulla sisällöllä.",
+        "Automaattiset järjestelmät: Teknisiä ratkaisuja, jotka laajentavat näkyvyyttäsi automaattisesti."
+      ]
+    },
     "COMMON": {
       "EXAMPLE": "Esimerkki:"
     },
-    "SECTION_1": {
-      "TITLE": "Suunnittelu ja Kehitys",
-      "SUBTITLE": "Rakennan yksilöllisiä verkkosivustoja yrityksille, jotka vaativat suorituskykyisiä ja ammattimaisia digitaalisia ratkaisuja. Kyseessä eivät ole geneeriset valmispohjat, vaan jokainen sivusto rakennetaan tukemaan brändiäsi ja myyntitavoitteitasi.",
-      "KEY_BENEFITS": {
-        "TITLE": "Keskeiset edut:",
-        "BENEFIT_1": {
-          "TITLE": "Huippuluokan nopeus:",
-          "DESCRIPTION": "Optimoin suorituskyvyn ja käyttökokemuksen parhaan asiakastyytyväisyyden ja hakukonenäkyvyyden varmistamiseksi."
-        },
-        "BENEFIT_2": {
-          "TITLE": "Saumaton mobiilikokemus:",
-          "DESCRIPTION": "Sivusto toimii ja näyttää hyvältä kaiken kokoisilla laitteilla pienistä puhelimista suuriin näyttöihin."
-        },
-        "BENEFIT_3": {
-          "TITLE": "Skaalautuva rakenne:",
-          "DESCRIPTION": "Koodi on tehty kasvamaan yrityksesi mukana. Uusien ominaisuuksien lisääminen on vaivatonta ilman teknisiä rajoitteita, joita tyypilliset \"raahaa ja pudota\" -työkalut aiheuttavat."
-        },
-        "BENEFIT_4": {
-          "TITLE": "Hakukoneoptimoitu koodi:",
-          "DESCRIPTION": "Ammattimainen koodaustapa varmistaa, että Google lukee sivustoasi oikein, mikä parantaa sijoituksiasi hakutuloksissa."
-        }
-      },
-      "SERVICE_1": {
-        "TITLE": "Räätälöidyt sivustot ja sovellukset",
-        "LEAD": "Rakennan ratkaisut alusta alkaen ilman teknisiä rajoitteita varmistaakseni, että sivustosi on optimoitu tavoittamaan enemmän asiakkaita.",
-        "DESCRIPTION": "Jokainen rivi koodia on kirjoitettu tukemaan myyntitavoitteitasi. Käyttämällä skaalautuvaa arkkitehtuuria varmistan, että sivustosi toimii täydellisesti mobiilissa ja työpöydällä tarjoten kokemuksen, johon valmispohjat eivät pysty.",
-        "EXAMPLE": "Huippunopea verkkosovellus, joka on suunniteltu saumattomaan kasvuun ja vaativiin integraatioihin."
-      },
-      "SERVICE_2": {
-        "TITLE": "Sivuston Modernisointi",
-        "LEAD": "Muuta hidas tai vanhentunut sivustosi tehokkaaksi työkaluksi puolessa tavallisesta ajasta.",
-        "DESCRIPTION": "Uudelleenrakentaminen on kannattavampaa kuin vanhan koodin paikkailu. Käytän nykyistä sivustoasi pohjana ja toimitamme paremman version uudistetuilla toiminnoilla, mikä tuo sinut markkinoille nopeammin kuin tyhjästä aloittaminen.",
-        "EXAMPLE": "Vanhentunut yrityssivusto muutettuna moderniksi työkaluksi nopeaan asiakashankintaan."
-      }
-    },
-    "SECTION_2": {
-      "TITLE": "Verkkokauppa ja SEO",
-      "SUBTITLE": "Rakennan kasvua tukevat verkkokauppa- ja hakukonenäkyvyyden ratkaisut, jotka muuttavat liikenteen myynniksi ja skaalautuvat liiketoimintasi mukana.",
-      "SERVICE_1": {
-        "TITLE": "Shopify-verkkokaupparatkaisut",
-        "LEAD": "Julkaise ammattimainen verkkokauppa, jossa on automaattinen tietoturva ja työkalut kovaan kasvuun.",
-        "DESCRIPTION": "Hoidan teknisen toteutuksen maksuista toimituksiin. Saat turvallisen ja helppokäyttöisen pohjan, joka kestää tuhansia tilauksia, jotta voit keskittyä liiketoimintaasi alustan hoitaessa päivitykset.",
-        "BENEFITS": {
-          "TITLE": "Keskeiset hyödyt:",
-          "BENEFIT_1": {
-            "TITLE": "Kustannustehokkuus:",
-            "DESCRIPTION": "Saat laadukkaan verkkokaupan ilman räätälöityjen ohjelmistojen suuria investointeja."
-          },
-          "BENEFIT_2": {
-            "TITLE": "Automaattinen tietoturva:",
-            "DESCRIPTION": "Alusta huolehtii tietoturvasta ja päivityksistä automaattisesti, jolloin voit keskittyä liiketoimintaasi."
-          },
-          "BENEFIT_3": {
-            "TITLE": "Rakennettu kasvuun:",
-            "DESCRIPTION": "Järjestelmä tukee yritystäsi ensimmäisestä tilauksesta aina kymmeniin tuhansiin tilauksiin kuukaudessa."
-          }
-        },
-        "EXAMPLE": "Moderni ostokokemus, joka muuttaa sosiaalisen median liikenteen suoraan myynniksi."
-      },
-      "SERVICE_2": {
-        "TITLE": "Strateginen ja tekninen SEO",
-        "LEAD": "Kokonaisvaltainen kasvupaketti, joka on suunniteltu ohittamaan kilpailijat muuttamalla haut liikevaihdoksi.",
-        "DESCRIPTION": "Palvelu yhdistää syvän teknisen optimoinnin ja selkeän kasvustrategian. Kartoitamme asiakkaiden todelliset hakuasanat, poistamme suorituskyvyn ja indeksoinnin esteet sekä rakennamme skaalautuvan sisaltö- ja auktoriteettisuunnitelman, joka kasvattaa näkyvyyttä ajan myotä.",
-        "PACKAGE": {
-          "TITLE": "Tarjottavia palveluita:",
-          "ITEM_1": {
-            "TITLE": "Kilpailija- ja hakutermianalyysi:",
-            "DESCRIPTION": "Analysoin kilpailijoidesi strategiat löytääkseni ne arvokkaat avainsanat, joita asiakkaasi todella käyttävät."
-          },
-          "ITEM_2": {
-            "TITLE": "Sisällön suunnittelu ja tuotanto:",
-            "DESCRIPTION": "Hoidan hakukoneoptimoidun sisällön strategian ja tuotannon, joka rakentaa luottamusta yleisösi ja hakukoneiden välille."
-          },
-          "ITEM_3": {
-            "TITLE": "Linkkien rakentaminen ja digitaalinen maine:",
-            "DESCRIPTION": "Vahvistan auktoriteettiasi hankkimalla linkkejä arvostetuilta sivustoilta varmistaakseni kärkisijat hauissa ja tekoälytuloksissa."
-          },
-          "ITEM_4": {
-            "TITLE": "Automaattiset näkyvyysjärjestelmät:",
-            "DESCRIPTION": "Räätälöidyissä projekteissa rakennan teknisiä järjestelmiä, jotka laajentavat näkyvyyttäsi automaattisesti tuhansiin merkittäviin hakutermeihin."
-          }
-        },
-        "EXAMPLE": "Alusta, jonka näkyvyys maksimoitiin ammattimaisella linkitysstrategialla ja kohdennetulla sisällöllä."
-      }
-    },
+
     "WHY_ME": {
       "TITLE": "Miksi valita minut",
       "SUBTITLE": "Keskityn ammattimaisiin tuloksiin ilman turhaa byrokratiaa, viivästyksiä tai teknisiä rajoitteita.",
@@ -163,6 +111,76 @@
         "DESCRIPTION": "Seison työni laadun takana. Jos sivustolla ilmenee virheitä tai ongelmia ensimmäisen vuoden aikana, korjaan ne veloituksetta. Voit luottaa siihen, että investointisi on turvattu."
       }
     },
+    "PROCESS": {
+      "TITLE": "Näin yhteistyö etenee",
+      "SUBTITLE": "Selkeä, vaiheistettu prosessi ensikontaktista julkaisuun ja sen jälkeen.",
+      "STEP_1": {
+        "TITLE": "01. Kartoitus ja tarjous",
+        "DESC": "Kartoitetaan tarpeesi ja projektin laajuus maksuttomassa etäpalaverissa, jota seuraa kiinteä tarjous sekä yksityiskohtainen määrittely sisällöstä.",
+        "DETAIL": "Tavoite: Maksuton etäpalaveri ja läpinäkyvä kiinteä hinta ilman piilokuluja."
+      },
+      "STEP_2": {
+        "TITLE": "02. Työn aloitus",
+        "DESC": "Työ käynnistyy heti tarjouksen hyväksymisen ja ensimmäisen maksuerän suorittamisen jälkeen.",
+        "DETAIL": "Sisältö: Virallinen sopimus ja vahvistettu aikataulu."
+      },
+      "STEP_3": {
+        "TITLE": "03. Ensimmäinen versio ja muokkauskierros (Viikot 1–2)",
+        "DESC": "Toimitan ensimmäisen julkaisuvalmiin version nähtäväksesi. Tätä seuraa palautteeseesi perustuva muokkauskierros.",
+        "DETAIL": "Nopeus: Näet konkreettisia tuloksia jo parin viikon sisällä."
+      },
+      "STEP_4": {
+        "TITLE": "04. Päivitetty versio (Viikko 3)",
+        "DESC": "Palautteeseen perustuvan version toimitus ja tarkistus.",
+        "DETAIL": "Varmistus: Kaikki muutostoiveet käydään huolellisesti läpi."
+      },
+      "STEP_5": {
+        "TITLE": "05. Hienosäätö ja virallinen julkaisu (Viikko 4)",
+        "DESC": "Lopputuloksen hienosäätö ja sivuston virallinen julkaisu.",
+        "DETAIL": "Joustavuus: Julkaisu on mahdollista toteuttaa jo ensimmäisen version valmistuttua viikkojen 1–2 jälkeen."
+      },
+      "STEP_6": {
+        "TITLE": "06. Ylläpito ja 1 vuoden takuu",
+        "DESC": "Huolehdin sivuston teknisestä suorituskyvystä ja turvallisuudesta julkaisun jälkeen tarjoten samalla vuoden mittaisen toimivuustakuun.",
+        "DETAIL": "Palvelu: Ammattimainen hosting (alk. 20 € / kk), tietoturvapäivitykset ja veloitukseton virheenkorjaus takuuaikana."
+      }
+    },
+    "FAQ": {
+      "TITLE": "Usein kysyttyäjä kysymyksiä",
+      "SUBTITLE": "Yleisiä kysymyksiä ja vastauksia palveluista, hinnoista ja toteutuksesta.",
+      "ITEM_1": {
+        "Q": "Voiko palvelun kautta toteuttaa verkkokaupan?",
+        "A": "Kyllä. Toteutan ammattimaisia Shopify-verkkokauppoja, jotka skaalautuvat yrityksesi kasvun mukana. Huolehdin teknisestä toteutuksesta maksuista toimituksiin, jotta saat turvallisen ja helppokäyttöisen alustan myynnille."
+      },
+      "ITEM_2": {
+        "Q": "Voinko itse vaikuttaa sivuston ulkoasuun ja väreihin?",
+        "A": "Ehdottomasti. Rakennan jokaisen sivuston tukemaan brändiäsi ja myyntitavoitteitasi. Toisin kuin rajoittuneissa valmispohjissa, tässä mallissa sinulla on vapaus valita brändiisi sopivat tyyli, värit ja rakenne ilman teknisiä rajoitteita."
+      },
+      "ITEM_3": {
+        "Q": "Miten varmistetaan, että sivusto näkyy hakukoneissa?",
+        "A": "Sivut rakennetaan hyödyntämään teknistä hakukoneoptimointia (SEO) jokaisessa projektissa. Tämä tarkoittaa puhdasta koodia, huippunopeaa latausaikaa ja rakenteita, joita Google suosii. Näin varmistamme, että asiakkaat löytävät yrityksesi hakutuloksista."
+      },
+      "ITEM_4": {
+        "Q": "Voinko päivittää kuvia tai sisältöä itse myöhemmin?",
+        "A": "Päivitykset ja sisältömuutokset hoituvat keskitetysti minun kauttani. Tämä takaa sen, että sivuston koodi pysyy puhtaana ja suorituskyky huipputasolla myös julkaisun jälkeen. Tarjoan sisältömuutoksia maksuttomana palveluna kerran kuukaudessa kootusti toimitettuna. Tiheämpään sisällön päivitykseen tai uusiin ominaisuuksiin voidaan kehittää erillinen muutostyökalu sivun kehityksen yhteydessä. Sinun ei tarvitse opetella monimutkaisia hallintapaneeleja tai murehtia sivuston rikkoutumisesta, sillä minä huolehdin teknisestä toteutuksesta puolestasi."
+      },
+      "ITEM_5": {
+        "Q": "Toimiiko sivusto yhtä hyvin puhelimella ja tietokoneella?",
+        "A": "Kyllä. Kaikki rakentamani sivustot ovat täysin responsiivisia. Ne optimoidaan tarjoamaan saumaton käyttökokemus kaikilla laitteilla pienistä puhelimen näytöistä suuriin työpöytänäyttöihin."
+      },
+      "ITEM_6": {
+        "Q": "Mitä sivuston ylläpito maksaa julkaisun jälkeen?",
+        "A": "Tarjoan edullisen ammattilaisylläpidon alkaen 20 euroa kuukaudessa. Tämä hinta sisältää laadukkaan hostauksen ja tietoturvapäivitykset, jotta sivustosi pysyy turvallisena ja nopeana jatkuvasti. Mikäli yritykselläsi ei vielä ole omaa verkkotunnusta eli domain-osoitetta, sen rekisteröinti onnistuu kauttani alkaen 10 euroa vuodessa. Autan myös ammattimaisen yrityssähköpostin käyttöönotossa, jonka kustannus on alkaen 1 euro kuukaudessa per sähköpostiluukku."
+      },
+      "ITEM_7": {
+        "Q": "Kuka sivustot toteuttaa ja miksi voin luottaa laatuun?",
+        "A": "Toteutan jokaisen projektin itse käyttäen alan parhaita koodausstandardeja. Käytän samoja teknologioita, joita maailman suurimmat ohjelmistoyritykset hyödyntävät. Tämä takaa sinulle nopean toimituksen ja huippulaadun. Työlläni on aina riskitön yhden vuoden takuu, jonka aikana ilmenevät ongelmat korjaan veloituksetta."
+      },
+      "ITEM_8": {
+        "Q": "Milloin ja miten projekti maksetaan?",
+        "A": "Tarkemmat maksuehdot sovitaan aina projektikohtaisesti sopimuksen yhteydessä. Tyypillisesti noudatamme mallia, jossa maksu suoritetaan vaiheittain työn edetessä. Tämä varmistaa molemmille osapuolille selkeän ja turvallisen prosessin."
+      }
+    },
     "EXAMPLES": {
       "ITEMS": {
         "SUPERWIDER": {
@@ -170,7 +188,7 @@
           "DESCRIPTION": "Tulospohjaisen vaikuttajamarkkinoinnin alusta."
         },
         "PUMPPILAB": {
-          "TITLE": "Pumppi Lab",
+          "TITLE": "Pumppilab",
           "DESCRIPTION": "Verkkokaupan ja tuotekokemuksen kehitystä."
         },
         "VALITAN": {
@@ -249,40 +267,38 @@
     "RECOMMENDATIONS": {
       "SHOPIFY": {
         "TITLE": "Shopify-verkkokaupparatkaisu",
-        "DESCRIPTION": "Julkaise ammattimainen verkkokauppa murto-osalla räätälöidyn koodauksen kustannuksista. Me hoidamme kaiken maksutavoista toimitusasetuksiin.",
-        "BENEFIT_1": "Helppo hallita",
-        "BENEFIT_2": "Kestää suuria tilausmääriä",
-        "BENEFIT_3": "Minimaalinen alkuinvestointi"
+        "DESCRIPTION": "Julkaise ammattimainen verkkokauppa, jossa on automaattinen tietoturva ja työkalut kovaan kasvuun ilman ohjelmistotalojen kankeutta tai suuria alkuinvestointeja.",
+        "BENEFIT_1": "Avaimet käteen –toteutus",
+        "BENEFIT_2": "Automaattinen tietoturva",
+        "BENEFIT_3": "Skaalautuu tuhansiin tilauksiin"
       },
       "MODERNIZATION": {
-        "TITLE": "Verkkosivuston modernisointi ja kehitys",
+        "TITLE": "Sivuston modernisointi",
         "DESCRIPTION": "Vanhentuneen sivuston uudelleenrakentaminen on kannattavampaa kuin vanhan koodin paikkailu. Käytämme nykyistä sivustoasi pohjana ja toimitamme paremman version nopeammin.",
-        "BENEFIT_1": "Nopea toimitus",
+        "BENEFIT_1": "Puolet tavallisesta kehitysajasta",
         "BENEFIT_2": "Huippuluokan suorituskyky",
-        "BENEFIT_3": "Uusin teknologia"
+        "BENEFIT_3": "Kustannustehokkas uudistus"
       },
       "CUSTOM": {
-        "TITLE": "Räätälöity kehitys",
-        "DESCRIPTION": "Ammattimaiset digitaaliset ratkaisut rakennettuna alusta alkaen. Nämä eivät ole yleisiä valmispohjia: keskitymme suorituskykyyn ja liiketoiminnan tavoitteisiin.",
+        "TITLE": "Räätälöidyt sivustot ja sovellukset",
+        "DESCRIPTION": "Ammattimaiset digitaaliset ratkaisut rakennettuna alusta alkaen ilman teknisiä rajoitteita tai ohjelmistotalojen kankeutta ja korkeita kustannuksia.",
         "BENEFIT_1": "Skaalautuva arkkitehtuuri",
-        "BENEFIT_2": "Ei teknisiä esteitä",
-        "BENEFIT_3": "Tiettyihin liiketoiminnan tarpeisiin"
+        "BENEFIT_2": "Huippuluokan nopeus",
+        "BENEFIT_3": "Täysin brändisi mukainen"
       },
       "SEO_SHOPIFY": {
         "TITLE": "Strateginen hakukoneoptimointi",
-        "DESCRIPTION_AGGRESSIVE": "Shopify hoitaa teknisen perustan automaattisesti. Me keskitymme strategiseen kasvuun hyödyntämällä kilpailijatietoa muuttaaksemme haut suoraan liikevaihdoksi.",
-        "DESCRIPTION_FOUNDATION": "Maksimoimme Shopify-kauppasi potentiaalin keskittymällä juuri niihin avainsanoihin ja sisältöihin, joita nykyiset ja tulevat asiakkaasi etsivät.",
-        "BENEFIT_1": "Kilpailija- ja hakusana-analyysi",
+        "DESCRIPTION": "Shopify hoitaa teknisen perustan automaattisesti. Keskitymme strategiseen kasvuun hyödyntämällä kilpailijatietoa muuttaaksemme haut suoraan liikevaihdoksi ilman kalliita välikäsiä.",
+        "BENEFIT_1": "Kilpailija– ja hakusana–analyysi",
         "BENEFIT_2": "Sisällön suunnittelu ja tuotanto",
-        "BENEFIT_3": "Linkkien rakentaminen ja digitaalinen maine"
+        "BENEFIT_3": "Linkkien rakentaminen ja maine"
       },
       "SEO_CUSTOM": {
-        "TITLE": "Strateginen ja tekninen hakukoneoptimointi",
-        "DESCRIPTION_AGGRESSIVE": "Kasvupaketti, joka on suunniteltu ohittamaan kilpailijat. Rakennamme räätälöityjä teknisiä järjestelmiä, jotka laajentavat näkyvyyttäsi automaattisesti kattamaan valtavan määrän hakutermejä varmistaen, että jokainen mahdollinen asiakas löytää luoksesi.",
-        "DESCRIPTION_FOUNDATION": "Vahva tekninen perusta tekee sivustostasi alasi luotetun johtajan. Yhdistämme tämän aktiiviseen maineen rakentamiseen varmistaaksemme, että pysyt auktoriteettina hakutulosten kärjessä.",
-        "BENEFIT_1": "Kilpailija- ja hakusana-analyysi",
-        "BENEFIT_2": "Sisällön suunnittelu ja tuotanto",
-        "BENEFIT_3": "Linkkien rakentaminen ja digitaalinen maine"
+        "TITLE": "Strateginen ja tekninen SEO",
+        "DESCRIPTION": "Kokonaisvaltainen kasvupaketti, joka on suunniteltu ohittamaan kilpailijat rakentamalla teknisiä järjestelmiä, jotka laajentavat näkyvyyttäsi automaattisesti.",
+        "BENEFIT_1": "Kilpailija-analyysi",
+        "BENEFIT_2": "Tekninen optimointi",
+        "BENEFIT_3": "Automaattinen näkyvyyden kasvu"
       }
     }
   },

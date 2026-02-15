@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--space-3xl);
 }
 
 .content {
@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: var(--space-3xl);
 }
 
 .textSection {
@@ -26,7 +26,7 @@
 .description {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--space-sm);
 }
 
 .imageSection {
@@ -47,10 +47,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  padding: var(--space-sm) var(--space-xl);
+  background: var(--bg-hover);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-md);
   color: white;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -60,12 +60,8 @@
 }
 
 .bigButton:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.bigButton p {
-  margin: 0;
+  background: var(--bg-elevated);
+  border-color: var(--accent-soft);
 }
 
 .quizSection {
@@ -76,20 +72,17 @@
 }
 
 .quizTitle {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: var(--foreground, #ededed);
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1024px) {
   .main {
-    gap: 32px;
+    gap: var(--space-2xl);
   }
 
   .content {
     flex-direction: column;
-    gap: 24px;
+    gap: var(--space-xl);
   }
 
   .textSection h1 {
@@ -102,17 +95,5 @@
 
   .imageSection {
     padding: 12px;
-  }
-
-  .quizTitle {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .quizTitle {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
   }
 }

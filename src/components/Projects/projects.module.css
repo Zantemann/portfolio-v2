@@ -4,14 +4,13 @@
 }
 
 .projectsContainer h2 {
-  margin: 0;
   margin-bottom: 24px;
 }
 
 .projectsGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  gap: var(--space-lg);
 }
 
 .projectCard {
@@ -46,7 +45,7 @@
 
 @media (max-width: 480px) {
   .projectsGrid {
-    gap: 10px;
+    gap: var(--space-md);
   }
 }
 

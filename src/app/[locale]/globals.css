@@ -1,6 +1,55 @@
 :root {
+  /* Colors */
   --background: #0a0a0a;
   --foreground: #ededed;
+
+  /* Text Colors - Hierarchy */
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-tertiary: rgba(255, 255, 255, 0.8);
+  --text-muted: rgba(255, 255, 255, 0.75);
+  --text-dim: rgba(255, 255, 255, 0.65);
+
+  /* Accent Colors */
+  --accent-primary: rgba(124, 255, 225, 0.9);
+  --accent-hover: rgba(124, 255, 225, 1);
+  --accent-soft: rgba(124, 255, 225, 0.5);
+  --accent-bg: rgba(124, 255, 225, 0.1);
+  --accent-bg-soft: rgba(124, 255, 225, 0.05);
+
+  /* Borders & Backgrounds */
+  --border-primary: rgba(255, 255, 255, 0.15);
+  --border-hover: rgba(255, 255, 255, 0.3);
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-hover: rgba(255, 255, 255, 0.05);
+  --bg-elevated: rgba(255, 255, 255, 0.08);
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.25rem; /* 20px */
+  --space-xl: 1.5rem; /* 24px */
+  --space-2xl: 2rem; /* 32px */
+  --space-3xl: 3rem; /* 48px */
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.4;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+  --leading-loose: 1.7;
+
+  /* Breakpoints */
   --bp-xs: 480px;
   --bp-sm: 768px;
   --bp-md: 1024px;
@@ -45,41 +94,148 @@ body {
   gap: 48px;
 }
 
+/* 5-Size Typography System */
+/* XL: 3rem → 2.5rem → 2rem (h1, page titles) */
+/* L: 1.75rem → 1.5rem → 1.25rem (h2, section headers) */
+/* M: 1.125rem → 1rem → 0.95rem (h3, paragraphs, card titles) */
+/* R: 1rem → 1rem → 0.9rem (lists, descriptions, helper text) */
+/* S: 0.875rem → 0.875rem → 0.85rem (small text, labels) */
+
 * h1 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem; /* XL */
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
 }
 
 * h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.75rem; /* L */
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
 }
 
 * h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.125rem; /* M */
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
 }
 
 * p {
-  font-size: 1.2rem;
+  font-size: 1.125rem; /* M - Regular paragraphs stay at 18px */
+  line-height: var(--leading-relaxed);
+}
+
+/* Common text colors */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-dim {
+  color: var(--text-dim);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+/* Accent heading variants */
+h2.text-accent,
+h3.text-accent {
+  color: var(--accent-primary);
+}
+
+/* Common Card Styles */
+.card {
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.card-elevated {
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+}
+
+/* Common Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Section Title - h2 with flex layout for numbers/icons */
+.section-title {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 1024px) {
   * h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* XL tablet */
   }
 
   * h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* L tablet */
   }
 
   * h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1rem; /* M */
+    font-weight: var(--font-medium);
   }
 
   * p {
-    font-size: 1rem;
+    font-size: 1rem; /* M - Paragraphs */
+  }
+}
+
+@media (max-width: 768px) {
+  * h1 {
+    font-size: 2rem; /* XL mobile */
+  }
+
+  * h2 {
+    font-size: 1.25rem; /* L mobile */
+  }
+
+  * h3 {
+    font-size: 0.95rem; /* M mobile */
+  }
+
+  * p {
+    font-size: 0.95rem; /* M mobile - Paragraphs */
   }
 }
 

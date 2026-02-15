@@ -42,7 +42,7 @@ export function buildRecommendations(t: (key: any) => string): RecommendationDat
     },
     seoShopifyAggressive: {
       title: t('RECOMMENDATIONS.SEO_SHOPIFY.TITLE'),
-      description: t('RECOMMENDATIONS.SEO_SHOPIFY.DESCRIPTION_AGGRESSIVE'),
+      description: t('RECOMMENDATIONS.SEO_SHOPIFY.DESCRIPTION'),
       benefits: [
         t('RECOMMENDATIONS.SEO_SHOPIFY.BENEFIT_1'),
         t('RECOMMENDATIONS.SEO_SHOPIFY.BENEFIT_2'),
@@ -51,7 +51,7 @@ export function buildRecommendations(t: (key: any) => string): RecommendationDat
     },
     seoShopifyFoundation: {
       title: t('RECOMMENDATIONS.SEO_SHOPIFY.TITLE'),
-      description: t('RECOMMENDATIONS.SEO_SHOPIFY.DESCRIPTION_FOUNDATION'),
+      description: t('RECOMMENDATIONS.SEO_SHOPIFY.DESCRIPTION'),
       benefits: [
         t('RECOMMENDATIONS.SEO_SHOPIFY.BENEFIT_1'),
         t('RECOMMENDATIONS.SEO_SHOPIFY.BENEFIT_2'),
@@ -60,7 +60,7 @@ export function buildRecommendations(t: (key: any) => string): RecommendationDat
     },
     seoCustomAggressive: {
       title: t('RECOMMENDATIONS.SEO_CUSTOM.TITLE'),
-      description: t('RECOMMENDATIONS.SEO_CUSTOM.DESCRIPTION_AGGRESSIVE'),
+      description: t('RECOMMENDATIONS.SEO_CUSTOM.DESCRIPTION'),
       benefits: [
         t('RECOMMENDATIONS.SEO_CUSTOM.BENEFIT_1'),
         t('RECOMMENDATIONS.SEO_CUSTOM.BENEFIT_2'),
@@ -69,7 +69,7 @@ export function buildRecommendations(t: (key: any) => string): RecommendationDat
     },
     seoCustomFoundation: {
       title: t('RECOMMENDATIONS.SEO_CUSTOM.TITLE'),
-      description: t('RECOMMENDATIONS.SEO_CUSTOM.DESCRIPTION_FOUNDATION'),
+      description: t('RECOMMENDATIONS.SEO_CUSTOM.DESCRIPTION'),
       benefits: [
         t('RECOMMENDATIONS.SEO_CUSTOM.BENEFIT_1'),
         t('RECOMMENDATIONS.SEO_CUSTOM.BENEFIT_2'),
